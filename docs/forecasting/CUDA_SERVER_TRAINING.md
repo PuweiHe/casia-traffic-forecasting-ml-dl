@@ -1,5 +1,9 @@
 # Run the multi-horizon study on an NVIDIA CUDA server
 
+> Historical protocol: the active bounded study and continuous-worker scheduling
+> are described in [Focused MLE workflow v2](MLE_WORKFLOW_V2.md). The broad
+> search below is retained for reproducibility and is not the current launch plan.
+
 This is a separate CUDA replication of the [frozen multi-horizon protocol](MULTIHORIZON_STUDY.md). It trains the same seven preregistered configurations on each of METR-LA and PEMS-BAY with three seeds (42 runs total), using 12 five-minute input readings to predict the next 12 readings. The original CPU and Apple Silicon MPS runs remain independent. No CUDA accuracy or speed result is claimed before the server actually runs.
 
 Use the public repository checkout, or transfer the local `traffic_forecasting_cuda_server.tar.gz` bundle and extract it with `tar -xzf traffic_forecasting_cuda_server.tar.gz && cd traffic-forecasting-cuda`. Run every command below from that repository/bundle root. The bundle contains code, configuration, tests, and instructions, but no traffic data.

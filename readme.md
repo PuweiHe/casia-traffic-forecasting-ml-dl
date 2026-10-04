@@ -6,11 +6,17 @@ An internship-derived traffic analytics project with reproducible Random Forest,
 
 ## Multi-horizon extension — training in progress
 
-A [bottom-up audit](docs/forecasting/DEEP_AUDIT.md) reverified the published checkpoints and identified attribution, masking, and multi-step interface limitations. A [frozen multi-horizon study](docs/forecasting/MULTIHORIZON_STUDY.md) now compares a factorial STGCN ablation, recursive/direct prediction, DCRNN and STTN across three seeds on METR-LA and independently trained PEMS-BAY models. Final results are pending; no new accuracy gain is claimed.
+The current [focused MLE workflow](docs/forecasting/MLE_WORKFLOW_V2.md) predicts
+12 future five-minute speeds from 12 past readings. It combines matched STGCN
+ablations, DCRNN/STTN controls and a speed-only STAEformer study, with validation-only
+selection, frozen hardware protocols and resumable continuous GPU workers.
+All 11 STAEformer trials completed; matched-core and local PEMS-BAY development
+training are in progress. Final independent evaluation remains pending. Earlier
+single-step scores below belong to a different task.
 
-A separate [Apple Silicon MPS STTN run](docs/forecasting/MPS_STTN.md) trains the same Transformer configuration and data splits in parallel. Device compatibility, prediction parity and checkpoint restoration were tested; its validation and test results are still pending. The original CPU study remains intact.
-
-For an NVIDIA Linux server, the [CUDA training guide](docs/forecasting/CUDA_SERVER_TRAINING.md) provides a separate 42-run protocol, preflight model check, resumable training command, and locked final evaluation. CUDA runtime performance and accuracy have not yet been measured.
+Historical [multi-horizon protocol](docs/forecasting/MULTIHORIZON_STUDY.md),
+[CUDA setup](docs/forecasting/CUDA_SERVER_TRAINING.md) and
+[audit](docs/forecasting/DEEP_AUDIT.md) remain available for provenance.
 
 ## Public Los Angeles traffic forecasting: STGCN, DCRNN, and STTN
 

@@ -1,5 +1,9 @@
 # Validation search for 12-step speed forecasting
 
+> Historical protocol: the active bounded study and continuous-worker scheduling
+> are described in [Focused MLE workflow v2](MLE_WORKFLOW_V2.md). The broad
+> search below is retained for reproducibility and is not the current launch plan.
+
 Status: implemented and locally tested; NVIDIA execution and all search results are pending.
 No performance improvement is claimed. The existing CPU/MPS protocols are unchanged.
 
