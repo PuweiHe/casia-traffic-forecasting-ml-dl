@@ -1,0 +1,154 @@
+{
+  "status": "complete_matched_cohort_validation_only",
+  "completed_trials": 18,
+  "planned_trials": 18,
+  "dataset": "METR_LA exploratory",
+  "hardware": "Frozen V100 32GB cohort",
+  "frozen_protocol_sha256": "edf01e7f23e69ac8083f2f8cc34fff1ec2aae0999dbd652d08628e15331215d2",
+  "data_manifest_sha256": "c5b761fcbf9b5f2afdeb9631e337cf405744284a59fc247b62a4ce357a0694c6",
+  "groups": [
+    {
+      "trial": "dcrnn_selected_control",
+      "n": 3,
+      "seeds": [
+        17,
+        42,
+        73
+      ],
+      "mean_mae_mph": 2.868115916884206,
+      "sample_sd_mae_mph": 0.008060697544371227,
+      "parameters": 888705,
+      "timed_training_seconds_sum": 31574.11895826389
+    },
+    {
+      "trial": "stgcn_compact_res0",
+      "n": 3,
+      "seeds": [
+        17,
+        42,
+        73
+      ],
+      "mean_mae_mph": 2.869269030383972,
+      "sample_sd_mae_mph": 0.009284292811952711,
+      "parameters": 24612,
+      "timed_training_seconds_sum": 4098.047301691491
+    },
+    {
+      "trial": "stgcn_compact_res1",
+      "n": 3,
+      "seeds": [
+        17,
+        42,
+        73
+      ],
+      "mean_mae_mph": 2.9086309352397905,
+      "sample_sd_mae_mph": 0.0107442833538962,
+      "parameters": 24612,
+      "timed_training_seconds_sum": 5002.710197356064
+    },
+    {
+      "trial": "stgcn_tuned_res0",
+      "n": 3,
+      "seeds": [
+        17,
+        42,
+        73
+      ],
+      "mean_mae_mph": 2.8137877674226326,
+      "sample_sd_mae_mph": 0.005082506453754406,
+      "parameters": 150636,
+      "timed_training_seconds_sum": 5266.817334008636
+    },
+    {
+      "trial": "stgcn_tuned_res1",
+      "n": 3,
+      "seeds": [
+        17,
+        42,
+        73
+      ],
+      "mean_mae_mph": 2.8494144083306034,
+      "sample_sd_mae_mph": 0.006447018321422162,
+      "parameters": 150636,
+      "timed_training_seconds_sum": 5387.3863675312605
+    },
+    {
+      "trial": "sttn_selected_control",
+      "n": 3,
+      "seeds": [
+        17,
+        42,
+        73
+      ],
+      "mean_mae_mph": 2.9772915310738792,
+      "sample_sd_mae_mph": 0.01455173037629111,
+      "parameters": 152831,
+      "timed_training_seconds_sum": 18178.410820172867
+    }
+  ],
+  "effects": {
+    "tuning_with_residual_off": {
+      "paired_seeds": [
+        17,
+        42,
+        73
+      ],
+      "variant_minus_reference_mae_mph": [
+        -0.058034371041994604,
+        -0.067141137265887,
+        -0.041268280576136185
+      ],
+      "mean_difference_mph": -0.05548126296133926,
+      "sample_sd_difference_mph": 0.013124021829291756
+    },
+    "residual_on_compact": {
+      "paired_seeds": [
+        17,
+        42,
+        73
+      ],
+      "variant_minus_reference_mae_mph": [
+        0.023404696293356952,
+        0.03424137217129708,
+        0.060439646102801614
+      ],
+      "mean_difference_mph": 0.03936190485581855,
+      "sample_sd_difference_mph": 0.019041054804736023
+    },
+    "residual_on_tuned": {
+      "paired_seeds": [
+        17,
+        42,
+        73
+      ],
+      "variant_minus_reference_mae_mph": [
+        0.026440282507448565,
+        0.04738278955071484,
+        0.033056850665748705
+      ],
+      "mean_difference_mph": 0.03562664090797071,
+      "sample_sd_difference_mph": 0.010705139734308889
+    },
+    "tuning_residual_interaction": {
+      "paired_seeds": [
+        17,
+        42,
+        73
+      ],
+      "difference_in_differences_mph": [
+        0.0030355862140916123,
+        0.013141417379417764,
+        -0.02738279543705291
+      ],
+      "mean_mph": -0.0037352639478478444
+    }
+  },
+  "limitations": [
+    "Validation evidence only; no new test evaluation",
+    "All 18 matched-core trials verified; validation completion is not independent-test completion",
+    "Three-seed sample SD is not a confidence interval",
+    "Tuning effect is a joint configuration effect, not attribution to an individual hyperparameter",
+    "Historical selection budgets differ across architectures",
+    "Timed training cost excludes checkpoint I/O, setup and Slurm queue delay"
+  ]
+}

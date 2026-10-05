@@ -1,0 +1,926 @@
+[
+  {
+    "identity": "6ac4070fee93d9447c23d8d2769ca4b18bae63791e082d3c843fcaa44338583a",
+    "trial": "staeformer_screen_001",
+    "model": "STAEformer",
+    "seed": 17,
+    "completed_epochs": 37,
+    "selected_epoch": 17,
+    "validation": {
+      "all": {
+        "overall": {
+          "mae_mph": 2.8063632101181164,
+          "rmse_mph": 5.788296052086687,
+          "observations": 7863740,
+          "pooled_mae_mph": 2.8063647163611942
+        },
+        "horizons": {
+          "5": {
+            "mae_mph": 2.1026347948581283,
+            "rmse_mph": 3.7134040088665894,
+            "observations": 655308
+          },
+          "10": {
+            "mae_mph": 2.3266856245017884,
+            "rmse_mph": 4.37110465436887,
+            "observations": 655309
+          },
+          "15": {
+            "mae_mph": 2.4828484075187416,
+            "rmse_mph": 4.830735002379256,
+            "observations": 655309
+          },
+          "20": {
+            "mae_mph": 2.6124086121106984,
+            "rmse_mph": 5.20522699302318,
+            "observations": 655309
+          },
+          "25": {
+            "mae_mph": 2.7292135962762276,
+            "rmse_mph": 5.531152060584214,
+            "observations": 655310
+          },
+          "30": {
+            "mae_mph": 2.8346068746875828,
+            "rmse_mph": 5.820131789002832,
+            "observations": 655310
+          },
+          "35": {
+            "mae_mph": 2.9225618609233153,
+            "rmse_mph": 6.072512116879564,
+            "observations": 655310
+          },
+          "40": {
+            "mae_mph": 2.999076400998872,
+            "rmse_mph": 6.259738853911965,
+            "observations": 655311
+          },
+          "45": {
+            "mae_mph": 3.0731357767216267,
+            "rmse_mph": 6.446357178087864,
+            "observations": 655313
+          },
+          "50": {
+            "mae_mph": 3.1405179079857035,
+            "rmse_mph": 6.607276388677947,
+            "observations": 655315
+          },
+          "55": {
+            "mae_mph": 3.1979554366534577,
+            "rmse_mph": 6.75334441778518,
+            "observations": 655317
+          },
+          "60": {
+            "mae_mph": 3.2547132281812527,
+            "rmse_mph": 6.883240223540506,
+            "observations": 655319
+          }
+        }
+      }
+    },
+    "training_seconds": 2051.8218978259247,
+    "parameters": 242524,
+    "source": "private_runs/completed_followup/formal_v100/staeformer_screen_001/17/result.json",
+    "sha256": "784f1d32ba491a0197978c399ad941f5f850da7c7dac1df2a261000ad1b2a392"
+  },
+  {
+    "identity": "792b7d231e0f0479d61771905aa6c9a27fba43ed7fed98aa562a70c2fa93fc6a",
+    "trial": "staeformer_screen_000",
+    "model": "STAEformer",
+    "seed": 17,
+    "completed_epochs": 34,
+    "selected_epoch": 14,
+    "validation": {
+      "all": {
+        "overall": {
+          "mae_mph": 2.7919542312373085,
+          "rmse_mph": 5.785891799022426,
+          "observations": 7863740,
+          "pooled_mae_mph": 2.7919556721693604
+        },
+        "horizons": {
+          "5": {
+            "mae_mph": 2.1184644508378914,
+            "rmse_mph": 3.752004610989338,
+            "observations": 655308
+          },
+          "10": {
+            "mae_mph": 2.338095704203198,
+            "rmse_mph": 4.431714282202829,
+            "observations": 655309
+          },
+          "15": {
+            "mae_mph": 2.481905771786391,
+            "rmse_mph": 4.873353239875699,
+            "observations": 655309
+          },
+          "20": {
+            "mae_mph": 2.6111706589208974,
+            "rmse_mph": 5.246159332880714,
+            "observations": 655309
+          },
+          "25": {
+            "mae_mph": 2.7216302906431853,
+            "rmse_mph": 5.559260573071076,
+            "observations": 655310
+          },
+          "30": {
+            "mae_mph": 2.814117091722342,
+            "rmse_mph": 5.825527574652056,
+            "observations": 655310
+          },
+          "35": {
+            "mae_mph": 2.9001504551700292,
+            "rmse_mph": 6.064873008959219,
+            "observations": 655310
+          },
+          "40": {
+            "mae_mph": 2.9752970656416,
+            "rmse_mph": 6.249251186572518,
+            "observations": 655311
+          },
+          "45": {
+            "mae_mph": 3.0454007151003406,
+            "rmse_mph": 6.412702283708705,
+            "observations": 655313
+          },
+          "50": {
+            "mae_mph": 3.1054236371982396,
+            "rmse_mph": 6.559071493551797,
+            "observations": 655315
+          },
+          "55": {
+            "mae_mph": 3.16323555919632,
+            "rmse_mph": 6.698383058979922,
+            "observations": 655317
+          },
+          "60": {
+            "mae_mph": 3.2285593744272605,
+            "rmse_mph": 6.858434884849425,
+            "observations": 655319
+          }
+        }
+      }
+    },
+    "training_seconds": 3600.3728675267193,
+    "parameters": 799980,
+    "source": "private_runs/completed_followup/formal_v100/staeformer_screen_000/17/result.json",
+    "sha256": "46b05bada6e922905b41e5a8577c0140021d63fe684eadc91cd72b8bd6b56c65"
+  },
+  {
+    "identity": "5bc4f06d5b75f00e8e6f7d6463fbfb7f6512215672a6ae2703a5ff464f6e1afa",
+    "trial": "staeformer_screen_002",
+    "model": "STAEformer",
+    "seed": 17,
+    "completed_epochs": 37,
+    "selected_epoch": 17,
+    "validation": {
+      "all": {
+        "overall": {
+          "mae_mph": 2.7958521182928653,
+          "rmse_mph": 5.794945522176342,
+          "observations": 7863740,
+          "pooled_mae_mph": 2.7958535164150633
+        },
+        "horizons": {
+          "5": {
+            "mae_mph": 2.1503580632892896,
+            "rmse_mph": 3.778806812118661,
+            "observations": 655308
+          },
+          "10": {
+            "mae_mph": 2.3421369422770733,
+            "rmse_mph": 4.431646072767835,
+            "observations": 655309
+          },
+          "15": {
+            "mae_mph": 2.497869677004909,
+            "rmse_mph": 4.9036580233820715,
+            "observations": 655309
+          },
+          "20": {
+            "mae_mph": 2.6147488917981514,
+            "rmse_mph": 5.271269528093764,
+            "observations": 655309
+          },
+          "25": {
+            "mae_mph": 2.730068840615745,
+            "rmse_mph": 5.58109091452054,
+            "observations": 655310
+          },
+          "30": {
+            "mae_mph": 2.8229741769319934,
+            "rmse_mph": 5.8523391644088845,
+            "observations": 655310
+          },
+          "35": {
+            "mae_mph": 2.8987215706457246,
+            "rmse_mph": 6.07369029697812,
+            "observations": 655310
+          },
+          "40": {
+            "mae_mph": 2.977466695698156,
+            "rmse_mph": 6.271295680283529,
+            "observations": 655311
+          },
+          "45": {
+            "mae_mph": 3.037162139619055,
+            "rmse_mph": 6.418875040592257,
+            "observations": 655313
+          },
+          "50": {
+            "mae_mph": 3.1043434453050684,
+            "rmse_mph": 6.561669993389519,
+            "observations": 655315
+          },
+          "55": {
+            "mae_mph": 3.1565308334195423,
+            "rmse_mph": 6.700769089094783,
+            "observations": 655317
+          },
+          "60": {
+            "mae_mph": 3.2178441429096702,
+            "rmse_mph": 6.8154313659720165,
+            "observations": 655319
+          }
+        }
+      }
+    },
+    "training_seconds": 3926.4373044508975,
+    "parameters": 799980,
+    "source": "private_runs/completed_followup/formal_v100/staeformer_screen_002/17/result.json",
+    "sha256": "5ea58086eb60ac823b894c1478ac20cbcd332075009624f834f327994b86c275"
+  },
+  {
+    "identity": "b65512f217872bdb68367f7dfd5a43a918dd2b4dd45aad583b9aba3801c189e5",
+    "trial": "staeformer_screen_001",
+    "model": "STAEformer",
+    "seed": 42,
+    "completed_epochs": 32,
+    "selected_epoch": 12,
+    "validation": {
+      "all": {
+        "overall": {
+          "mae_mph": 2.8010115162318896,
+          "rmse_mph": 5.8212454860699925,
+          "observations": 7863740,
+          "pooled_mae_mph": 2.801012965845355
+        },
+        "horizons": {
+          "5": {
+            "mae_mph": 2.1172599069885107,
+            "rmse_mph": 3.753785114855606,
+            "observations": 655308
+          },
+          "10": {
+            "mae_mph": 2.3438270689991665,
+            "rmse_mph": 4.453608447493544,
+            "observations": 655309
+          },
+          "15": {
+            "mae_mph": 2.497610522569723,
+            "rmse_mph": 4.915092975346838,
+            "observations": 655309
+          },
+          "20": {
+            "mae_mph": 2.624204770818519,
+            "rmse_mph": 5.270905224991037,
+            "observations": 655309
+          },
+          "25": {
+            "mae_mph": 2.729817110726686,
+            "rmse_mph": 5.577153213777123,
+            "observations": 655310
+          },
+          "30": {
+            "mae_mph": 2.8223557882043875,
+            "rmse_mph": 5.853311337409504,
+            "observations": 655310
+          },
+          "35": {
+            "mae_mph": 2.9097857978765447,
+            "rmse_mph": 6.076454029585614,
+            "observations": 655310
+          },
+          "40": {
+            "mae_mph": 2.983755919780351,
+            "rmse_mph": 6.276839059080909,
+            "observations": 655311
+          },
+          "45": {
+            "mae_mph": 3.050126700805511,
+            "rmse_mph": 6.447661997622314,
+            "observations": 655313
+          },
+          "50": {
+            "mae_mph": 3.116487901119815,
+            "rmse_mph": 6.605624648814417,
+            "observations": 655315
+          },
+          "55": {
+            "mae_mph": 3.1744799996818465,
+            "rmse_mph": 6.76759828473258,
+            "observations": 655317
+          },
+          "60": {
+            "mae_mph": 3.2424267072116155,
+            "rmse_mph": 6.9340628542452,
+            "observations": 655319
+          }
+        }
+      }
+    },
+    "training_seconds": 1786.6590126215015,
+    "parameters": 242524,
+    "source": "private_runs/completed_followup/followup_v100/staeformer_screen_001/42/result.json",
+    "sha256": "602238b314a64810b9af4363eb3a10c26b30011c7f16d2e77ea84f01cd555a13"
+  },
+  {
+    "identity": "0fc0b6e83eebfc662040323a2efe7b7bef20ccb1ee1fe531cbf54daddc96e14f",
+    "trial": "staeformer_screen_001",
+    "model": "STAEformer",
+    "seed": 73,
+    "completed_epochs": 35,
+    "selected_epoch": 15,
+    "validation": {
+      "all": {
+        "overall": {
+          "mae_mph": 2.8146262468307586,
+          "rmse_mph": 5.806010120384069,
+          "observations": 7863740,
+          "pooled_mae_mph": 2.814627704655974
+        },
+        "horizons": {
+          "5": {
+            "mae_mph": 2.1240752472254854,
+            "rmse_mph": 3.7464815802683606,
+            "observations": 655308
+          },
+          "10": {
+            "mae_mph": 2.3504326911701128,
+            "rmse_mph": 4.452570629237205,
+            "observations": 655309
+          },
+          "15": {
+            "mae_mph": 2.509207025906152,
+            "rmse_mph": 4.927931537766412,
+            "observations": 655309
+          },
+          "20": {
+            "mae_mph": 2.6367651502377023,
+            "rmse_mph": 5.280250272241604,
+            "observations": 655309
+          },
+          "25": {
+            "mae_mph": 2.7484760214703536,
+            "rmse_mph": 5.593887315951907,
+            "observations": 655310
+          },
+          "30": {
+            "mae_mph": 2.838363640714864,
+            "rmse_mph": 5.8524733569855085,
+            "observations": 655310
+          },
+          "35": {
+            "mae_mph": 2.9258368235570686,
+            "rmse_mph": 6.08216689671863,
+            "observations": 655310
+          },
+          "40": {
+            "mae_mph": 2.996518652670873,
+            "rmse_mph": 6.266294505210851,
+            "observations": 655311
+          },
+          "45": {
+            "mae_mph": 3.0665363405752197,
+            "rmse_mph": 6.437466446834446,
+            "observations": 655313
+          },
+          "50": {
+            "mae_mph": 3.129945698002749,
+            "rmse_mph": 6.583039798525784,
+            "observations": 655315
+          },
+          "55": {
+            "mae_mph": 3.1945182229013307,
+            "rmse_mph": 6.7123805262999525,
+            "observations": 655317
+          },
+          "60": {
+            "mae_mph": 3.254839447537191,
+            "rmse_mph": 6.8449833300274205,
+            "observations": 655319
+          }
+        }
+      }
+    },
+    "training_seconds": 1941.127821956994,
+    "parameters": 242524,
+    "source": "private_runs/completed_followup/followup_v100/staeformer_screen_001/73/result.json",
+    "sha256": "515f3f95367baf1ef7151dd47cebd81b8b528de5be5f145c9593193a22f1b4a9"
+  },
+  {
+    "identity": "def5f269512856bb48d95194ee41a3493c0ebe2346a431f9e1f6f2be365b6d65",
+    "trial": "staeformer_spatial",
+    "model": "STAEformer",
+    "seed": 42,
+    "completed_epochs": 44,
+    "selected_epoch": 24,
+    "validation": {
+      "all": {
+        "overall": {
+          "mae_mph": 2.790577310678023,
+          "rmse_mph": 5.775393192636161,
+          "observations": 7863740,
+          "pooled_mae_mph": 2.790578735488926
+        },
+        "horizons": {
+          "5": {
+            "mae_mph": 2.1041917507963372,
+            "rmse_mph": 3.7102661468673483,
+            "observations": 655308
+          },
+          "10": {
+            "mae_mph": 2.326841306041504,
+            "rmse_mph": 4.372088573311677,
+            "observations": 655309
+          },
+          "15": {
+            "mae_mph": 2.486563800651473,
+            "rmse_mph": 4.836226126271706,
+            "observations": 655309
+          },
+          "20": {
+            "mae_mph": 2.618646291904919,
+            "rmse_mph": 5.213206971337103,
+            "observations": 655309
+          },
+          "25": {
+            "mae_mph": 2.729203034398443,
+            "rmse_mph": 5.536076455335752,
+            "observations": 655310
+          },
+          "30": {
+            "mae_mph": 2.822186754378518,
+            "rmse_mph": 5.814628164788379,
+            "observations": 655310
+          },
+          "35": {
+            "mae_mph": 2.903269098983019,
+            "rmse_mph": 6.048800218902294,
+            "observations": 655310
+          },
+          "40": {
+            "mae_mph": 2.9771690948200806,
+            "rmse_mph": 6.2455551484192995,
+            "observations": 655311
+          },
+          "45": {
+            "mae_mph": 3.0443682494148625,
+            "rmse_mph": 6.418841803060846,
+            "observations": 655313
+          },
+          "50": {
+            "mae_mph": 3.102464373827639,
+            "rmse_mph": 6.576358778877228,
+            "observations": 655315
+          },
+          "55": {
+            "mae_mph": 3.1572439299311856,
+            "rmse_mph": 6.726128579406628,
+            "observations": 655317
+          },
+          "60": {
+            "mae_mph": 3.2147800429882927,
+            "rmse_mph": 6.860743141102329,
+            "observations": 655319
+          }
+        }
+      }
+    },
+    "training_seconds": 2414.5090203834698,
+    "parameters": 151444,
+    "source": "private_runs/completed_followup/followup_v100/staeformer_spatial/42/result.json",
+    "sha256": "39a83d7431dbb9901bbbfa3fe27d615c469f308140f1659ca43e37fa4533bb95"
+  },
+  {
+    "identity": "a4f5efcf92090bdd18811aec5f71a7357b296706628ce211cf0a161d675d5c2b",
+    "trial": "staeformer_spatial",
+    "model": "STAEformer",
+    "seed": 73,
+    "completed_epochs": 40,
+    "selected_epoch": 20,
+    "validation": {
+      "all": {
+        "overall": {
+          "mae_mph": 2.7963006378186552,
+          "rmse_mph": 5.829445194683654,
+          "observations": 7863740,
+          "pooled_mae_mph": 2.796302066052442
+        },
+        "horizons": {
+          "5": {
+            "mae_mph": 2.107819800752276,
+            "rmse_mph": 3.731008294475204,
+            "observations": 655308
+          },
+          "10": {
+            "mae_mph": 2.334418849940603,
+            "rmse_mph": 4.4200948972807215,
+            "observations": 655309
+          },
+          "15": {
+            "mae_mph": 2.490696077927436,
+            "rmse_mph": 4.8875733949662505,
+            "observations": 655309
+          },
+          "20": {
+            "mae_mph": 2.620602377969613,
+            "rmse_mph": 5.27462120614339,
+            "observations": 655309
+          },
+          "25": {
+            "mae_mph": 2.7295961256891603,
+            "rmse_mph": 5.581605269461317,
+            "observations": 655310
+          },
+          "30": {
+            "mae_mph": 2.8307987378615964,
+            "rmse_mph": 5.869451124483079,
+            "observations": 655310
+          },
+          "35": {
+            "mae_mph": 2.9139736819053805,
+            "rmse_mph": 6.115157440183759,
+            "observations": 655310
+          },
+          "40": {
+            "mae_mph": 2.9852968612521242,
+            "rmse_mph": 6.3073681260050565,
+            "observations": 655311
+          },
+          "45": {
+            "mae_mph": 3.0498701395411327,
+            "rmse_mph": 6.476617209621146,
+            "observations": 655313
+          },
+          "50": {
+            "mae_mph": 3.10625530106879,
+            "rmse_mph": 6.630541897636654,
+            "observations": 655315
+          },
+          "55": {
+            "mae_mph": 3.162036135259368,
+            "rmse_mph": 6.7761547157239574,
+            "observations": 655317
+          },
+          "60": {
+            "mae_mph": 3.2242435646563847,
+            "rmse_mph": 6.929012565617155,
+            "observations": 655319
+          }
+        }
+      }
+    },
+    "training_seconds": 2203.8116016874555,
+    "parameters": 151444,
+    "source": "private_runs/completed_followup/followup_v100/staeformer_spatial/73/result.json",
+    "sha256": "ed2008d546e9636bcc70fd8d78af5872e026681225979238139173781d2ab373"
+  },
+  {
+    "identity": "a237bbf55b9360b1fc6084b803da43771dbea334cb6e44ef347fcf4e99e4ab02",
+    "trial": "staeformer_spatial",
+    "model": "STAEformer",
+    "seed": 17,
+    "completed_epochs": 41,
+    "selected_epoch": 21,
+    "validation": {
+      "all": {
+        "overall": {
+          "mae_mph": 2.7917178352411534,
+          "rmse_mph": 5.764723014119256,
+          "observations": 7863740,
+          "pooled_mae_mph": 2.7917192534042625
+        },
+        "horizons": {
+          "5": {
+            "mae_mph": 2.1049864321473,
+            "rmse_mph": 3.7009177355581473,
+            "observations": 655308
+          },
+          "10": {
+            "mae_mph": 2.328258507052518,
+            "rmse_mph": 4.380316399855413,
+            "observations": 655309
+          },
+          "15": {
+            "mae_mph": 2.4827652057592724,
+            "rmse_mph": 4.840372383524961,
+            "observations": 655309
+          },
+          "20": {
+            "mae_mph": 2.6207289520629886,
+            "rmse_mph": 5.223270454396116,
+            "observations": 655309
+          },
+          "25": {
+            "mae_mph": 2.73275379513156,
+            "rmse_mph": 5.542637090513691,
+            "observations": 655310
+          },
+          "30": {
+            "mae_mph": 2.8252438657378023,
+            "rmse_mph": 5.816329586768702,
+            "observations": 655310
+          },
+          "35": {
+            "mae_mph": 2.908347612278489,
+            "rmse_mph": 6.042837140585963,
+            "observations": 655310
+          },
+          "40": {
+            "mae_mph": 2.9840179146212122,
+            "rmse_mph": 6.235549392800471,
+            "observations": 655311
+          },
+          "45": {
+            "mae_mph": 3.045651039918181,
+            "rmse_mph": 6.39155606537486,
+            "observations": 655313
+          },
+          "50": {
+            "mae_mph": 3.099490220282965,
+            "rmse_mph": 6.550036773442997,
+            "observations": 655315
+          },
+          "55": {
+            "mae_mph": 3.152804115964988,
+            "rmse_mph": 6.692180998217416,
+            "observations": 655317
+          },
+          "60": {
+            "mae_mph": 3.2155663619365646,
+            "rmse_mph": 6.833695456820789,
+            "observations": 655319
+          }
+        }
+      }
+    },
+    "training_seconds": 2269.6559114474803,
+    "parameters": 151444,
+    "source": "private_runs/completed_followup/followup_v100/staeformer_spatial/17/result.json",
+    "sha256": "d71cd762f13023b4d64e0eed61054a5fa3d09f8e7abf51f74dba6f40485b3cf8"
+  },
+  {
+    "identity": "ab20f2c1c4d9e19ce06b74f8f1c174f3b3401e290c85486f3a37daa687c43e2b",
+    "trial": "staeformer_zero",
+    "model": "STAEformer",
+    "seed": 42,
+    "completed_epochs": 70,
+    "selected_epoch": 50,
+    "validation": {
+      "all": {
+        "overall": {
+          "mae_mph": 3.1955900448636823,
+          "rmse_mph": 6.685423294245466,
+          "observations": 7863740,
+          "pooled_mae_mph": 3.1955923608029035
+        },
+        "horizons": {
+          "5": {
+            "mae_mph": 2.189106700511278,
+            "rmse_mph": 3.919189024242964,
+            "observations": 655308
+          },
+          "10": {
+            "mae_mph": 2.486665948937285,
+            "rmse_mph": 4.825958406161225,
+            "observations": 655309
+          },
+          "15": {
+            "mae_mph": 2.706014065867826,
+            "rmse_mph": 5.44437991246368,
+            "observations": 655309
+          },
+          "20": {
+            "mae_mph": 2.8909571843808415,
+            "rmse_mph": 5.914642372517725,
+            "observations": 655309
+          },
+          "25": {
+            "mae_mph": 3.0554878088151116,
+            "rmse_mph": 6.320542053907707,
+            "observations": 655310
+          },
+          "30": {
+            "mae_mph": 3.2033382022144425,
+            "rmse_mph": 6.6726095206490035,
+            "observations": 655310
+          },
+          "35": {
+            "mae_mph": 3.340218815527896,
+            "rmse_mph": 6.986918427437278,
+            "observations": 655310
+          },
+          "40": {
+            "mae_mph": 3.4686308030236956,
+            "rmse_mph": 7.262906087825536,
+            "observations": 655311
+          },
+          "45": {
+            "mae_mph": 3.588456659350613,
+            "rmse_mph": 7.523862844523787,
+            "observations": 655313
+          },
+          "50": {
+            "mae_mph": 3.6995939766889294,
+            "rmse_mph": 7.751337049932731,
+            "observations": 655315
+          },
+          "55": {
+            "mae_mph": 3.806934318109435,
+            "rmse_mph": 7.968582346770995,
+            "observations": 655317
+          },
+          "60": {
+            "mae_mph": 3.9116760549368355,
+            "rmse_mph": 8.175190258359486,
+            "observations": 655319
+          }
+        }
+      }
+    },
+    "training_seconds": 3867.655761641683,
+    "parameters": 242524,
+    "source": "private_runs/completed_followup/followup_v100/staeformer_zero/42/result.json",
+    "sha256": "0d3087aea3c77eb07a50409a00c2381ce325cfc89cec538c5a4e17ea1953b262"
+  },
+  {
+    "identity": "525b25ea0d6ef7aa7bae94e0170a802b9610af0f4af58a0f43e56147070da529",
+    "trial": "staeformer_zero",
+    "model": "STAEformer",
+    "seed": 73,
+    "completed_epochs": 95,
+    "selected_epoch": 75,
+    "validation": {
+      "all": {
+        "overall": {
+          "mae_mph": 3.19348623476651,
+          "rmse_mph": 6.6765126471670095,
+          "observations": 7863740,
+          "pooled_mae_mph": 3.19348855755494
+        },
+        "horizons": {
+          "5": {
+            "mae_mph": 2.1842180106306537,
+            "rmse_mph": 3.9147832481467693,
+            "observations": 655308
+          },
+          "10": {
+            "mae_mph": 2.4816633233677408,
+            "rmse_mph": 4.816719873018997,
+            "observations": 655309
+          },
+          "15": {
+            "mae_mph": 2.7004092847918915,
+            "rmse_mph": 5.428678748350908,
+            "observations": 655309
+          },
+          "20": {
+            "mae_mph": 2.886968822716732,
+            "rmse_mph": 5.905180557669305,
+            "observations": 655309
+          },
+          "25": {
+            "mae_mph": 3.05311870311693,
+            "rmse_mph": 6.308011857835877,
+            "observations": 655310
+          },
+          "30": {
+            "mae_mph": 3.201314455854705,
+            "rmse_mph": 6.664821769875147,
+            "observations": 655310
+          },
+          "35": {
+            "mae_mph": 3.3392726641680692,
+            "rmse_mph": 6.982148093831673,
+            "observations": 655310
+          },
+          "40": {
+            "mae_mph": 3.468837184210388,
+            "rmse_mph": 7.265172754463055,
+            "observations": 655311
+          },
+          "45": {
+            "mae_mph": 3.5888074217902957,
+            "rmse_mph": 7.51448634934008,
+            "observations": 655313
+          },
+          "50": {
+            "mae_mph": 3.7010558170924166,
+            "rmse_mph": 7.740739086082565,
+            "observations": 655315
+          },
+          "55": {
+            "mae_mph": 3.806527130199929,
+            "rmse_mph": 7.954622174536671,
+            "observations": 655317
+          },
+          "60": {
+            "mae_mph": 3.9096419992583638,
+            "rmse_mph": 8.162991354042612,
+            "observations": 655319
+          }
+        }
+      }
+    },
+    "training_seconds": 5211.096531308489,
+    "parameters": 242524,
+    "source": "private_runs/completed_followup/followup_v100/staeformer_zero/73/result.json",
+    "sha256": "e51b8c58997c6e57c90c80131b733cff59aa45245ca4abdd7ee61f923d61cdf9"
+  },
+  {
+    "identity": "fbc3814dc88f50e61e83a11900a5e5f9ce76b9f5f3c5979dca628fe6123727ff",
+    "trial": "staeformer_zero",
+    "model": "STAEformer",
+    "seed": 17,
+    "completed_epochs": 78,
+    "selected_epoch": 58,
+    "validation": {
+      "all": {
+        "overall": {
+          "mae_mph": 3.1929571861206956,
+          "rmse_mph": 6.68231962286571,
+          "observations": 7863740,
+          "pooled_mae_mph": 3.192959505013956
+        },
+        "horizons": {
+          "5": {
+            "mae_mph": 2.1880819111706304,
+            "rmse_mph": 3.927481642386502,
+            "observations": 655308
+          },
+          "10": {
+            "mae_mph": 2.4848304334955618,
+            "rmse_mph": 4.831473719201106,
+            "observations": 655309
+          },
+          "15": {
+            "mae_mph": 2.701053579760348,
+            "rmse_mph": 5.439166907384766,
+            "observations": 655309
+          },
+          "20": {
+            "mae_mph": 2.8867876830448265,
+            "rmse_mph": 5.9171287378766255,
+            "observations": 655309
+          },
+          "25": {
+            "mae_mph": 3.0514847308334847,
+            "rmse_mph": 6.310401738387531,
+            "observations": 655310
+          },
+          "30": {
+            "mae_mph": 3.200045416847152,
+            "rmse_mph": 6.668028468400617,
+            "observations": 655310
+          },
+          "35": {
+            "mae_mph": 3.3369284273016704,
+            "rmse_mph": 6.982696538607142,
+            "observations": 655310
+          },
+          "40": {
+            "mae_mph": 3.4659154162291097,
+            "rmse_mph": 7.267706576486675,
+            "observations": 655311
+          },
+          "45": {
+            "mae_mph": 3.5860169447349937,
+            "rmse_mph": 7.511641754473119,
+            "observations": 655313
+          },
+          "50": {
+            "mae_mph": 3.699460835107897,
+            "rmse_mph": 7.751682223759362,
+            "observations": 655315
+          },
+          "55": {
+            "mae_mph": 3.8060225988665892,
+            "rmse_mph": 7.962423167716812,
+            "observations": 655317
+          },
+          "60": {
+            "mae_mph": 3.9088582560560847,
+            "rmse_mph": 8.166994244185645,
+            "observations": 655319
+          }
+        }
+      }
+    },
+    "training_seconds": 4325.3910938175395,
+    "parameters": 242524,
+    "source": "private_runs/completed_followup/followup_v100/staeformer_zero/17/result.json",
+    "sha256": "076e37bd4832f97bb012e6e0e8709e1074858140638e9ab3e7fa8fbda8a430cd"
+  }
+]

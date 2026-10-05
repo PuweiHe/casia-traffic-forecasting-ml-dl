@@ -1,0 +1,98 @@
+{
+  "checked_at": "2026-10-05T03:03:17.605030+00:00",
+  "source_partition": "First training history only; no validation/test scoring",
+  "artifact_sha256": "5b66c3aa16e4cc2d7a83ab153ece0ce83729cdf9ba743a779d53c0c6286710c5",
+  "selected_sha256": "8d7756a1e6f763f364e4fbe1be8161957a0b3f8d28a9849ebc64f76afd1da9a2",
+  "preprocessing_exact_match": true,
+  "cpu_reload_prediction_max_abs_error_mph": 0.0,
+  "frozen_source_hashes_match": true,
+  "environment": {
+    "python": "3.10.19",
+    "torch": "2.10.0",
+    "platform": "macOS-26.5.2-arm64-arm-64bit"
+  },
+  "stage": "locked_representative_seed42_serving_parity_and_cost",
+  "timing": {
+    "cpu": {
+      "same_device_reload_max_abs_error_mph": 0.0,
+      "batches": {
+        "1": {
+          "samples_ms": [
+            25.484958663582802,
+            35.09516641497612,
+            21.372083574533463,
+            19.686459563672543,
+            20.434916019439697,
+            22.229624912142754,
+            9.254291653633118,
+            8.829833008348942,
+            8.626875467598438,
+            8.075708523392677
+          ],
+          "p50_ms": 20.06068779155612,
+          "p95_ms": 30.770572926849116,
+          "windows_per_second": 49.84873950438114
+        },
+        "16": {
+          "samples_ms": [
+            250.79662539064884,
+            306.68462440371513,
+            286.88108269125223,
+            275.90466663241386,
+            330.3167074918747,
+            338.1418325006962,
+            264.0689993277192,
+            299.476083368063,
+            317.350790835917,
+            291.71149991452694
+          ],
+          "p50_ms": 295.59379164129496,
+          "p95_ms": 334.6205262467265,
+          "windows_per_second": 54.1283357514359
+        }
+      },
+      "scope": "In-process validation, normalization, forward, device transfer and list response; excludes HTTP transport and JSON encoding. 3 warmups, 10 synchronized repetitions on repeated training history."
+    },
+    "mps": {
+      "same_device_reload_max_abs_error_mph": 0.0,
+      "batches": {
+        "1": {
+          "samples_ms": [
+            16.00520871579647,
+            16.26749988645315,
+            15.401333570480347,
+            15.244875103235245,
+            14.845208264887333,
+            15.246333554387093,
+            15.357582829892635,
+            15.358875505626202,
+            15.317541547119617,
+            15.407957136631012
+          ],
+          "p50_ms": 15.358229167759418,
+          "p95_ms": 16.149468859657645,
+          "windows_per_second": 65.11167329754645
+        },
+        "16": {
+          "samples_ms": [
+            94.64558400213718,
+            52.91837453842163,
+            84.55716632306576,
+            96.110874786973,
+            60.40195934474468,
+            82.42550026625395,
+            83.69500003755093,
+            65.64279180020094,
+            86.29254158586264,
+            98.91983307898045
+          ],
+          "p50_ms": 84.12608318030834,
+          "p95_ms": 97.6558018475771,
+          "windows_per_second": 190.19071606729898
+        }
+      },
+      "scope": "In-process validation, normalization, forward, device transfer and list response; excludes HTTP transport and JSON encoding. 3 warmups, 10 synchronized repetitions on repeated training history.",
+      "current_allocated_bytes": 26131712
+    }
+  }
+}

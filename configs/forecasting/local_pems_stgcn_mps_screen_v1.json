@@ -1,0 +1,359 @@
+{
+  "version": "local_pems_stgcn_mps_screen_v1",
+  "purpose": "Independent M4 Pro MPS screening of PEMS-BAY STGCN to offload future CARC PEMS work; validation only",
+  "datasets": [
+    "PEMS_BAY"
+  ],
+  "seeds": [
+    17
+  ],
+  "epochs": 180,
+  "min_epochs": 40,
+  "patience": 25,
+  "threads": 4,
+  "trials": [
+    {
+      "id": "stgcn_reference",
+      "model": "STGCN",
+      "config": {
+        "Ks": 3,
+        "Kt": 3,
+        "blocks": [
+          [
+            1,
+            8,
+            16
+          ],
+          [
+            16,
+            8,
+            16
+          ]
+        ],
+        "dropout": 0.0,
+        "graph_conv_type": "chebconv",
+        "direct_multi_step": true
+      },
+      "learning_rate": 0.003,
+      "batch_size": 16,
+      "weight_decay": 0.0
+    },
+    {
+      "id": "stgcn_search_001",
+      "model": "STGCN",
+      "config": {
+        "Ks": 2,
+        "Kt": 3,
+        "blocks": [
+          [
+            1,
+            64,
+            128
+          ],
+          [
+            128,
+            64,
+            128
+          ]
+        ],
+        "dropout": 0.3,
+        "graph_conv_type": "chebconv",
+        "direct_multi_step": true
+      },
+      "learning_rate": 0.0003,
+      "batch_size": 32,
+      "weight_decay": 0.0001
+    },
+    {
+      "id": "stgcn_search_002",
+      "model": "STGCN",
+      "config": {
+        "Ks": 3,
+        "Kt": 3,
+        "blocks": [
+          [
+            1,
+            16,
+            32
+          ],
+          [
+            32,
+            16,
+            32
+          ]
+        ],
+        "dropout": 0.3,
+        "graph_conv_type": "chebconv",
+        "direct_multi_step": true
+      },
+      "learning_rate": 0.003,
+      "batch_size": 32,
+      "weight_decay": 0.001
+    },
+    {
+      "id": "stgcn_search_003",
+      "model": "STGCN",
+      "config": {
+        "Ks": 4,
+        "Kt": 2,
+        "blocks": [
+          [
+            1,
+            64,
+            128
+          ],
+          [
+            128,
+            64,
+            128
+          ]
+        ],
+        "dropout": 0.0,
+        "graph_conv_type": "chebconv",
+        "direct_multi_step": true
+      },
+      "learning_rate": 0.001,
+      "batch_size": 16,
+      "weight_decay": 0.0
+    },
+    {
+      "id": "stgcn_search_004",
+      "model": "STGCN",
+      "config": {
+        "Ks": 2,
+        "Kt": 2,
+        "blocks": [
+          [
+            1,
+            8,
+            16
+          ],
+          [
+            16,
+            8,
+            16
+          ]
+        ],
+        "dropout": 0.0,
+        "graph_conv_type": "chebconv",
+        "direct_multi_step": true
+      },
+      "learning_rate": 0.0003,
+      "batch_size": 64,
+      "weight_decay": 0.0001
+    },
+    {
+      "id": "stgcn_search_005",
+      "model": "STGCN",
+      "config": {
+        "Ks": 4,
+        "Kt": 2,
+        "blocks": [
+          [
+            1,
+            64,
+            128
+          ],
+          [
+            128,
+            64,
+            128
+          ]
+        ],
+        "dropout": 0.1,
+        "graph_conv_type": "chebconv",
+        "direct_multi_step": true
+      },
+      "learning_rate": 0.0003,
+      "batch_size": 32,
+      "weight_decay": 0.0
+    },
+    {
+      "id": "stgcn_search_006",
+      "model": "STGCN",
+      "config": {
+        "Ks": 2,
+        "Kt": 3,
+        "blocks": [
+          [
+            1,
+            16,
+            32
+          ],
+          [
+            32,
+            16,
+            32
+          ]
+        ],
+        "dropout": 0.2,
+        "graph_conv_type": "chebconv",
+        "direct_multi_step": true
+      },
+      "learning_rate": 0.0001,
+      "batch_size": 16,
+      "weight_decay": 0.0
+    },
+    {
+      "id": "stgcn_search_007",
+      "model": "STGCN",
+      "config": {
+        "Ks": 4,
+        "Kt": 3,
+        "blocks": [
+          [
+            1,
+            32,
+            64
+          ],
+          [
+            64,
+            32,
+            64
+          ]
+        ],
+        "dropout": 0.1,
+        "graph_conv_type": "chebconv",
+        "direct_multi_step": true
+      },
+      "learning_rate": 0.003,
+      "batch_size": 64,
+      "weight_decay": 1e-05
+    },
+    {
+      "id": "stgcn_search_008",
+      "model": "STGCN",
+      "config": {
+        "Ks": 2,
+        "Kt": 3,
+        "blocks": [
+          [
+            1,
+            32,
+            64
+          ],
+          [
+            64,
+            32,
+            64
+          ]
+        ],
+        "dropout": 0.0,
+        "graph_conv_type": "chebconv",
+        "direct_multi_step": true
+      },
+      "learning_rate": 0.0003,
+      "batch_size": 32,
+      "weight_decay": 0.0001
+    },
+    {
+      "id": "stgcn_search_009",
+      "model": "STGCN",
+      "config": {
+        "Ks": 4,
+        "Kt": 2,
+        "blocks": [
+          [
+            1,
+            32,
+            64
+          ],
+          [
+            64,
+            32,
+            64
+          ]
+        ],
+        "dropout": 0.0,
+        "graph_conv_type": "chebconv",
+        "direct_multi_step": true
+      },
+      "learning_rate": 0.0003,
+      "batch_size": 16,
+      "weight_decay": 0.0
+    },
+    {
+      "id": "stgcn_search_010",
+      "model": "STGCN",
+      "config": {
+        "Ks": 4,
+        "Kt": 2,
+        "blocks": [
+          [
+            1,
+            32,
+            64
+          ],
+          [
+            64,
+            32,
+            64
+          ]
+        ],
+        "dropout": 0.1,
+        "graph_conv_type": "chebconv",
+        "direct_multi_step": true
+      },
+      "learning_rate": 0.0003,
+      "batch_size": 16,
+      "weight_decay": 0.0001
+    },
+    {
+      "id": "stgcn_search_011",
+      "model": "STGCN",
+      "config": {
+        "Ks": 2,
+        "Kt": 2,
+        "blocks": [
+          [
+            1,
+            8,
+            16
+          ],
+          [
+            16,
+            8,
+            16
+          ]
+        ],
+        "dropout": 0.2,
+        "graph_conv_type": "chebconv",
+        "direct_multi_step": true
+      },
+      "learning_rate": 0.0001,
+      "batch_size": 32,
+      "weight_decay": 0.0001
+    },
+    {
+      "id": "stgcn_search_012",
+      "model": "STGCN",
+      "config": {
+        "Ks": 3,
+        "Kt": 3,
+        "blocks": [
+          [
+            1,
+            16,
+            32
+          ],
+          [
+            32,
+            16,
+            32
+          ]
+        ],
+        "dropout": 0.1,
+        "graph_conv_type": "chebconv",
+        "direct_multi_step": true
+      },
+      "learning_rate": 0.0003,
+      "batch_size": 64,
+      "weight_decay": 0.0
+    }
+  ],
+  "selection": "equal-weight mean of 12 validation horizon MAEs in mph; rank seed 17 only; test untouched",
+  "candidate_provenance": "stgcn_reference plus first 12 STGCN search candidates from cuda_search_v1.json seed 20261001, preserved per-trial batch size",
+  "hardware": "Apple M4 Pro MPS only; separate from CARC A100 protocol",
+  "data": "chronological train/validation; train-only normalization; mask nonpositive/nonfinite speeds; partition-contained 12-to-12 windows",
+  "next_stage": "Validation-rank shortlist, then prespecified seeds 42 and 73 under a separately frozen protocol before final test"
+}

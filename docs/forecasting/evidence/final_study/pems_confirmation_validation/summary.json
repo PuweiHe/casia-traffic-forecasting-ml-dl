@@ -1,0 +1,96 @@
+{
+  "status": "complete_three_seed_confirmation_validation_only",
+  "rows": [
+    {
+      "trial": "stgcn_reference",
+      "seed": 17,
+      "validation_mae_mph": 1.7127748346755767,
+      "selected_epoch": 56,
+      "completed_epochs": 81,
+      "parameters": 35940,
+      "timed_training_seconds": 4051.3836083724163,
+      "result_path": "runs/local_pems_stgcn_mps_screen_v1/PEMS_BAY/stgcn_reference/17/result.json",
+      "result_sha256": "1d479460eae5df2b6886ec1d368ed34e2eaa0de8f07a6719bd255de0d18fe2fe"
+    },
+    {
+      "trial": "stgcn_reference",
+      "seed": 42,
+      "validation_mae_mph": 1.7040718349404596,
+      "selected_epoch": 57,
+      "completed_epochs": 82,
+      "parameters": 35940,
+      "timed_training_seconds": 4263.235599040054,
+      "result_path": "runs/local_pems_stgcn_mps_confirm_v1/PEMS_BAY/stgcn_reference/42/result.json",
+      "result_sha256": "0a60e3c053a2605fae1a1e83bfb3f6f7569e358f9335c5e3c95012dec39a6a93"
+    },
+    {
+      "trial": "stgcn_reference",
+      "seed": 73,
+      "validation_mae_mph": 1.6917982043750084,
+      "selected_epoch": 64,
+      "completed_epochs": 89,
+      "parameters": 35940,
+      "timed_training_seconds": 4443.087825446855,
+      "result_path": "runs/local_pems_stgcn_mps_confirm_v1/PEMS_BAY/stgcn_reference/73/result.json",
+      "result_sha256": "7e8b79982810db561db2c197b8e8fb861ab85c2dbb69b28f992ceb0c4fc3b4bd"
+    },
+    {
+      "trial": "stgcn_search_005",
+      "seed": 17,
+      "validation_mae_mph": 1.6018691160395775,
+      "selected_epoch": 58,
+      "completed_epochs": 83,
+      "parameters": 637516,
+      "timed_training_seconds": 15676.96967516886,
+      "result_path": "runs/local_pems_stgcn_mps_screen_v1/PEMS_BAY/stgcn_search_005/17/result.json",
+      "result_sha256": "e2c2f6dc52388689b85505c85f656b132c07b64dcc6e26d814e7314b9e5673f1"
+    },
+    {
+      "trial": "stgcn_search_005",
+      "seed": 42,
+      "validation_mae_mph": 1.5977152418332055,
+      "selected_epoch": 41,
+      "completed_epochs": 66,
+      "parameters": 637516,
+      "timed_training_seconds": 12540.244464750867,
+      "result_path": "runs/local_pems_stgcn_mps_confirm_v1/PEMS_BAY/stgcn_search_005/42/result.json",
+      "result_sha256": "227dcaa4b5cc7bba4206efc4c1cb58bf5ef1c69a1adb562332c7cc752bfa06d3"
+    },
+    {
+      "trial": "stgcn_search_005",
+      "seed": 73,
+      "validation_mae_mph": 1.6030465425146123,
+      "selected_epoch": 45,
+      "completed_epochs": 70,
+      "parameters": 637516,
+      "timed_training_seconds": 13665.06123616267,
+      "result_path": "runs/local_pems_stgcn_mps_seed73_v1/PEMS_BAY/stgcn_search_005/73/result.json",
+      "result_sha256": "f3ffe2c391d97d944700e16afd54e38e125add7421918b6b73c2230c94ac0a37"
+    }
+  ],
+  "paired_results": [
+    {
+      "seed": 17,
+      "candidate_minus_reference_mph": -0.11090571863599918,
+      "relative_reduction_percent": 6.475207154535656
+    },
+    {
+      "seed": 42,
+      "candidate_minus_reference_mph": -0.1063565931072541,
+      "relative_reduction_percent": 6.241320989321453
+    },
+    {
+      "seed": 73,
+      "candidate_minus_reference_mph": -0.08875166186039607,
+      "relative_reduction_percent": 5.245995747653787
+    }
+  ],
+  "data_manifest_sha256": "80cd1c7851251cbdef64d1dd2895901dabf33ddec20bfea5b9798d75cac0bafd",
+  "limits": [
+    "Candidate seed73 verified complete",
+    "Seed 17 participated in 13-candidate selection; seeds42/73 are additional validation replications",
+    "PEMS-BAY provenance reviewed with disclosed audit scope; this script performs validation analysis only",
+    "Joint configuration search; larger parameter count, not a novel architecture gain",
+    "Timed training seconds exclude setup, checkpoint overhead and queue delay"
+  ]
+}

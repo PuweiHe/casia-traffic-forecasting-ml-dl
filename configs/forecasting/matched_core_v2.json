@@ -1,0 +1,512 @@
+{
+  "version": "matched_core_v2",
+  "dataset": "METR_LA",
+  "epochs": 100,
+  "min_epochs": 30,
+  "patience": 20,
+  "threads": 4,
+  "primary_metric": "equal_horizon_validation_mae_mph",
+  "precision": "fp32_no_tf32_no_amp",
+  "test_evaluation": false,
+  "historical_reuse": "selection only; no cross-hardware or cross-budget checkpoint reuse",
+  "tasks": [
+    {
+      "trial": {
+        "id": "stgcn_compact_res0",
+        "model": "STGCN",
+        "config": {
+          "Ks": 3,
+          "Kt": 3,
+          "blocks": [
+            [
+              1,
+              8,
+              16
+            ],
+            [
+              16,
+              8,
+              16
+            ]
+          ],
+          "dropout": 0.0,
+          "graph_conv_type": "chebconv",
+          "direct_multi_step": true,
+          "residual_last_speed": false,
+          "missing_aware_residual": false
+        },
+        "learning_rate": 0.003,
+        "batch_size": 16,
+        "weight_decay": 0.0,
+        "graph_topk": null
+      },
+      "seed": 17
+    },
+    {
+      "trial": {
+        "id": "stgcn_compact_res0",
+        "model": "STGCN",
+        "config": {
+          "Ks": 3,
+          "Kt": 3,
+          "blocks": [
+            [
+              1,
+              8,
+              16
+            ],
+            [
+              16,
+              8,
+              16
+            ]
+          ],
+          "dropout": 0.0,
+          "graph_conv_type": "chebconv",
+          "direct_multi_step": true,
+          "residual_last_speed": false,
+          "missing_aware_residual": false
+        },
+        "learning_rate": 0.003,
+        "batch_size": 16,
+        "weight_decay": 0.0,
+        "graph_topk": null
+      },
+      "seed": 42
+    },
+    {
+      "trial": {
+        "id": "stgcn_compact_res0",
+        "model": "STGCN",
+        "config": {
+          "Ks": 3,
+          "Kt": 3,
+          "blocks": [
+            [
+              1,
+              8,
+              16
+            ],
+            [
+              16,
+              8,
+              16
+            ]
+          ],
+          "dropout": 0.0,
+          "graph_conv_type": "chebconv",
+          "direct_multi_step": true,
+          "residual_last_speed": false,
+          "missing_aware_residual": false
+        },
+        "learning_rate": 0.003,
+        "batch_size": 16,
+        "weight_decay": 0.0,
+        "graph_topk": null
+      },
+      "seed": 73
+    },
+    {
+      "trial": {
+        "id": "stgcn_compact_res1",
+        "model": "STGCN",
+        "config": {
+          "Ks": 3,
+          "Kt": 3,
+          "blocks": [
+            [
+              1,
+              8,
+              16
+            ],
+            [
+              16,
+              8,
+              16
+            ]
+          ],
+          "dropout": 0.0,
+          "graph_conv_type": "chebconv",
+          "direct_multi_step": true,
+          "residual_last_speed": true,
+          "missing_aware_residual": true
+        },
+        "learning_rate": 0.003,
+        "batch_size": 16,
+        "weight_decay": 0.0,
+        "graph_topk": null
+      },
+      "seed": 17
+    },
+    {
+      "trial": {
+        "id": "stgcn_compact_res1",
+        "model": "STGCN",
+        "config": {
+          "Ks": 3,
+          "Kt": 3,
+          "blocks": [
+            [
+              1,
+              8,
+              16
+            ],
+            [
+              16,
+              8,
+              16
+            ]
+          ],
+          "dropout": 0.0,
+          "graph_conv_type": "chebconv",
+          "direct_multi_step": true,
+          "residual_last_speed": true,
+          "missing_aware_residual": true
+        },
+        "learning_rate": 0.003,
+        "batch_size": 16,
+        "weight_decay": 0.0,
+        "graph_topk": null
+      },
+      "seed": 42
+    },
+    {
+      "trial": {
+        "id": "stgcn_compact_res1",
+        "model": "STGCN",
+        "config": {
+          "Ks": 3,
+          "Kt": 3,
+          "blocks": [
+            [
+              1,
+              8,
+              16
+            ],
+            [
+              16,
+              8,
+              16
+            ]
+          ],
+          "dropout": 0.0,
+          "graph_conv_type": "chebconv",
+          "direct_multi_step": true,
+          "residual_last_speed": true,
+          "missing_aware_residual": true
+        },
+        "learning_rate": 0.003,
+        "batch_size": 16,
+        "weight_decay": 0.0,
+        "graph_topk": null
+      },
+      "seed": 73
+    },
+    {
+      "trial": {
+        "id": "stgcn_tuned_res0",
+        "model": "STGCN",
+        "config": {
+          "Ks": 3,
+          "Kt": 3,
+          "blocks": [
+            [
+              1,
+              32,
+              64
+            ],
+            [
+              64,
+              32,
+              64
+            ]
+          ],
+          "dropout": 0.2,
+          "graph_conv_type": "chebconv",
+          "direct_multi_step": true,
+          "residual_last_speed": false,
+          "missing_aware_residual": false
+        },
+        "learning_rate": 0.0001,
+        "batch_size": 16,
+        "weight_decay": 1e-05,
+        "graph_topk": null
+      },
+      "seed": 17
+    },
+    {
+      "trial": {
+        "id": "stgcn_tuned_res0",
+        "model": "STGCN",
+        "config": {
+          "Ks": 3,
+          "Kt": 3,
+          "blocks": [
+            [
+              1,
+              32,
+              64
+            ],
+            [
+              64,
+              32,
+              64
+            ]
+          ],
+          "dropout": 0.2,
+          "graph_conv_type": "chebconv",
+          "direct_multi_step": true,
+          "residual_last_speed": false,
+          "missing_aware_residual": false
+        },
+        "learning_rate": 0.0001,
+        "batch_size": 16,
+        "weight_decay": 1e-05,
+        "graph_topk": null
+      },
+      "seed": 42
+    },
+    {
+      "trial": {
+        "id": "stgcn_tuned_res0",
+        "model": "STGCN",
+        "config": {
+          "Ks": 3,
+          "Kt": 3,
+          "blocks": [
+            [
+              1,
+              32,
+              64
+            ],
+            [
+              64,
+              32,
+              64
+            ]
+          ],
+          "dropout": 0.2,
+          "graph_conv_type": "chebconv",
+          "direct_multi_step": true,
+          "residual_last_speed": false,
+          "missing_aware_residual": false
+        },
+        "learning_rate": 0.0001,
+        "batch_size": 16,
+        "weight_decay": 1e-05,
+        "graph_topk": null
+      },
+      "seed": 73
+    },
+    {
+      "trial": {
+        "id": "stgcn_tuned_res1",
+        "model": "STGCN",
+        "config": {
+          "Ks": 3,
+          "Kt": 3,
+          "blocks": [
+            [
+              1,
+              32,
+              64
+            ],
+            [
+              64,
+              32,
+              64
+            ]
+          ],
+          "dropout": 0.2,
+          "graph_conv_type": "chebconv",
+          "direct_multi_step": true,
+          "residual_last_speed": true,
+          "missing_aware_residual": true
+        },
+        "learning_rate": 0.0001,
+        "batch_size": 16,
+        "weight_decay": 1e-05,
+        "graph_topk": null
+      },
+      "seed": 17
+    },
+    {
+      "trial": {
+        "id": "stgcn_tuned_res1",
+        "model": "STGCN",
+        "config": {
+          "Ks": 3,
+          "Kt": 3,
+          "blocks": [
+            [
+              1,
+              32,
+              64
+            ],
+            [
+              64,
+              32,
+              64
+            ]
+          ],
+          "dropout": 0.2,
+          "graph_conv_type": "chebconv",
+          "direct_multi_step": true,
+          "residual_last_speed": true,
+          "missing_aware_residual": true
+        },
+        "learning_rate": 0.0001,
+        "batch_size": 16,
+        "weight_decay": 1e-05,
+        "graph_topk": null
+      },
+      "seed": 42
+    },
+    {
+      "trial": {
+        "id": "stgcn_tuned_res1",
+        "model": "STGCN",
+        "config": {
+          "Ks": 3,
+          "Kt": 3,
+          "blocks": [
+            [
+              1,
+              32,
+              64
+            ],
+            [
+              64,
+              32,
+              64
+            ]
+          ],
+          "dropout": 0.2,
+          "graph_conv_type": "chebconv",
+          "direct_multi_step": true,
+          "residual_last_speed": true,
+          "missing_aware_residual": true
+        },
+        "learning_rate": 0.0001,
+        "batch_size": 16,
+        "weight_decay": 1e-05,
+        "graph_topk": null
+      },
+      "seed": 73
+    },
+    {
+      "trial": {
+        "id": "dcrnn_selected_control",
+        "model": "DCRNN",
+        "config": {
+          "max_diffusion_step": 1,
+          "num_rnn_layers": 2,
+          "rnn_units": 128,
+          "filter_type": "dual_random_walk",
+          "use_curriculum_learning": false,
+          "residual_last_speed": true,
+          "missing_aware_residual": true
+        },
+        "learning_rate": 0.003,
+        "batch_size": 32,
+        "weight_decay": 0.0001
+      },
+      "seed": 17
+    },
+    {
+      "trial": {
+        "id": "dcrnn_selected_control",
+        "model": "DCRNN",
+        "config": {
+          "max_diffusion_step": 1,
+          "num_rnn_layers": 2,
+          "rnn_units": 128,
+          "filter_type": "dual_random_walk",
+          "use_curriculum_learning": false,
+          "residual_last_speed": true,
+          "missing_aware_residual": true
+        },
+        "learning_rate": 0.003,
+        "batch_size": 32,
+        "weight_decay": 0.0001
+      },
+      "seed": 42
+    },
+    {
+      "trial": {
+        "id": "dcrnn_selected_control",
+        "model": "DCRNN",
+        "config": {
+          "max_diffusion_step": 1,
+          "num_rnn_layers": 2,
+          "rnn_units": 128,
+          "filter_type": "dual_random_walk",
+          "use_curriculum_learning": false,
+          "residual_last_speed": true,
+          "missing_aware_residual": true
+        },
+        "learning_rate": 0.003,
+        "batch_size": 32,
+        "weight_decay": 0.0001
+      },
+      "seed": 73
+    },
+    {
+      "trial": {
+        "id": "sttn_selected_control",
+        "model": "STTN",
+        "config": {
+          "embed_dim": 32,
+          "num_layers": 2,
+          "num_heads": 4,
+          "forward_expansion": 2,
+          "dropout_rate": 0.1,
+          "residual_last_speed": true,
+          "residual_scale": 0.5
+        },
+        "learning_rate": 0.0005,
+        "batch_size": 16,
+        "weight_decay": 0.0
+      },
+      "seed": 17
+    },
+    {
+      "trial": {
+        "id": "sttn_selected_control",
+        "model": "STTN",
+        "config": {
+          "embed_dim": 32,
+          "num_layers": 2,
+          "num_heads": 4,
+          "forward_expansion": 2,
+          "dropout_rate": 0.1,
+          "residual_last_speed": true,
+          "residual_scale": 0.5
+        },
+        "learning_rate": 0.0005,
+        "batch_size": 16,
+        "weight_decay": 0.0
+      },
+      "seed": 42
+    },
+    {
+      "trial": {
+        "id": "sttn_selected_control",
+        "model": "STTN",
+        "config": {
+          "embed_dim": 32,
+          "num_layers": 2,
+          "num_heads": 4,
+          "forward_expansion": 2,
+          "dropout_rate": 0.1,
+          "residual_last_speed": true,
+          "residual_scale": 0.5
+        },
+        "learning_rate": 0.0005,
+        "batch_size": 16,
+        "weight_decay": 0.0
+      },
+      "seed": 73
+    }
+  ]
+}

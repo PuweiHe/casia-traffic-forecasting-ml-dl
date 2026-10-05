@@ -1,0 +1,26 @@
+{
+  "dataset": "PEMS_BAY",
+  "shape": [
+    52116,
+    325
+  ],
+  "hashes": {
+    "values.npy": "160522277641e24269d6409a543f8279045ca573d7833e7de71d6fd75eb6a324",
+    "adj.npy": "28284061afca871a5cdd97c6262f4b5f827a77219fb179c77c3a8fb0443a26ab",
+    "timestamps.npy": "162399529e14bb61781b4df55bbd8ef0c400bbfd0cbb5d2b508d40e2fb391faf",
+    "sensor_ids.npy": "53ae96a9a7a6335b7303131e37580ea2e263534c422007269835f289d65b8d1d"
+  },
+  "boundaries": [
+    36481,
+    41692
+  ],
+  "mean": 62.7378058413669,
+  "std": 9.433875689912233,
+  "train_missing_fraction": 1.4507024731491569e-05,
+  "unit": "mph",
+  "history": 12,
+  "horizon": 12,
+  "graph_symmetric": false,
+  "graph_policy": "STGCN uses max(A,A.T); DCRNN/STTN use supplied directed road graph",
+  "test_status": "unopened_for_model_selection"
+}

@@ -1,22 +1,27 @@
 # CASIA Traffic Forecasting — Machine Learning & Deep Learning
 
-**Reproduce a baseline, diagnose noisy targets, and ship a smaller forecasting model.**
+**Audit temporal data, compare spatiotemporal models, and ship reproducible forecasting artifacts.**
 
 An internship-derived traffic analytics project with reproducible Random Forest, LibCity SVR/FNN/GRU comparisons, a validated FastAPI inference service, and a public **METR-LA graph and Transformer forecasting** study. The internship-recording task predicts next-minute mean vehicle speed; the public Los Angeles task predicts 5-minute-ahead speed at 207 road sensors. [Model selection](docs/forecasting/MODEL_SELECTION.md) · [METR-LA protocol and model results](docs/forecasting/METR_LA_STUDY.md).
 
-## Multi-horizon extension — training in progress
+## Completed multi-horizon study — independent PEMS-BAY evaluation
 
-The current [focused MLE workflow](docs/forecasting/MLE_WORKFLOW_V2.md) predicts
-12 future five-minute speeds from 12 past readings. It combines matched STGCN
-ablations, DCRNN/STTN controls and a speed-only STAEformer study, with validation-only
-selection, frozen hardware protocols and resumable continuous GPU workers.
-All 11 STAEformer trials completed; matched-core and local PEMS-BAY development
-training are in progress. Final independent evaluation remains pending. Earlier
-single-step scores below belong to a different task.
+The 2026 reconstruction predicts12 future five-minute speeds from12 past readings.
+Validation-selected STGCN tuning reduced held-out PEMS-BAY MAE from **1.6853 to
+1.6114 mph (4.38%)**, averaged over three matched seeds. The tuned model uses17.74×
+more parameters; this is an explicit accuracy/cost trade-off. METR-LA matched
+ablations and a speed-only STAEformer adaptation remain exploratory validation
+comparisons. These are later reconstructed measurements, not original2024 results.
+
+[Final research report](docs/forecasting/FINAL_STUDY.md) ·
+[Reproduce and serve the selected model](docs/forecasting/REPRODUCE_FINAL_STUDY.md) ·
+[Exact test evidence](docs/forecasting/evidence/final_study/final_pems/summary.json) ·
+[Research figures](docs/forecasting/figures/pems_locked_test.png)
 
 Historical [multi-horizon protocol](docs/forecasting/MULTIHORIZON_STUDY.md),
-[CUDA setup](docs/forecasting/CUDA_SERVER_TRAINING.md) and
+[workflow decisions](docs/forecasting/MLE_WORKFLOW_V2.md) and
 [audit](docs/forecasting/DEEP_AUDIT.md) remain available for provenance.
+Earlier single-step scores below belong to a different task.
 
 ## Public Los Angeles traffic forecasting: STGCN, DCRNN, and STTN
 

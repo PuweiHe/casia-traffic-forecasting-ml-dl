@@ -1,3 +1,7 @@
+> **Completed study:** training and locked PEMS evaluation are complete. See
+> [final report](FINAL_STUDY.md) and [reproduction instructions](REPRODUCE_FINAL_STUDY.md).
+> The dated planning and scheduling text below is historical, not live status.
+
 # Focused traffic forecasting workflow v2
 
 Updated: 2026-10-03. This document describes the current bounded study and

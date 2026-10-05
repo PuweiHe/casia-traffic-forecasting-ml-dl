@@ -1,0 +1,72 @@
+{
+  "version": "focused_staeformer_v1",
+  "dataset": "METR_LA",
+  "epochs": 100,
+  "min_epochs": 30,
+  "patience": 20,
+  "threads": 4,
+  "primary_metric": "equal_horizon_validation_mae_mph",
+  "precision": "fp32_no_tf32_no_amp",
+  "tasks": [
+    {
+      "trial": {
+        "id": "staeformer_screen_000",
+        "model": "STAEformer",
+        "config": {
+          "input_embedding_dim": 24,
+          "adaptive_embedding_dim": 80,
+          "feed_forward_dim": 256,
+          "num_heads": 4,
+          "num_layers": 3,
+          "dropout": 0.1,
+          "embedding_mode": "adaptive",
+          "use_mixed_proj": true
+        },
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "batch_size": 16
+      },
+      "seed": 17
+    },
+    {
+      "trial": {
+        "id": "staeformer_screen_001",
+        "model": "STAEformer",
+        "config": {
+          "input_embedding_dim": 24,
+          "adaptive_embedding_dim": 40,
+          "feed_forward_dim": 128,
+          "num_heads": 4,
+          "num_layers": 2,
+          "dropout": 0.1,
+          "embedding_mode": "adaptive",
+          "use_mixed_proj": true
+        },
+        "learning_rate": 0.001,
+        "weight_decay": 0.0001,
+        "batch_size": 16
+      },
+      "seed": 17
+    },
+    {
+      "trial": {
+        "id": "staeformer_screen_002",
+        "model": "STAEformer",
+        "config": {
+          "input_embedding_dim": 24,
+          "adaptive_embedding_dim": 80,
+          "feed_forward_dim": 256,
+          "num_heads": 4,
+          "num_layers": 3,
+          "dropout": 0.1,
+          "embedding_mode": "adaptive",
+          "use_mixed_proj": true
+        },
+        "learning_rate": 0.0003,
+        "weight_decay": 0.0001,
+        "batch_size": 16
+      },
+      "seed": 17
+    }
+  ]
+}

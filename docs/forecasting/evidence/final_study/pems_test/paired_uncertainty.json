@@ -1,0 +1,24 @@
+{
+  "protocol_sha256": "7452a82352dab1c05ea6d919b3e8d94795fd807e83ed54660047d142d81e2bad",
+  "seed": 42,
+  "block_count": 37,
+  "window_count": 10401,
+  "reference_mae_mph": 1.6845258407059678,
+  "candidate_mae_mph": 1.603653131572827,
+  "candidate_minus_reference_mph": -0.08087270913314071,
+  "relative_reduction_percent": 4.800918286848466,
+  "candidate_minus_reference_mph_ci95": [
+    -0.09300174598380404,
+    -0.06878450921603631
+  ],
+  "relative_reduction_percent_ci95": [
+    4.267018698862822,
+    5.308653907010146
+  ],
+  "limits": [
+    "Conditional temporal-block uncertainty, not a guarantee for other dates or datasets.",
+    "One representative seed; report three-seed training variation separately.",
+    "Daily blocks approximate serial dependence; overlapping forecast windows are not independent samples.",
+    "Final partial block is resampled as observed; not a formal IID confidence guarantee."
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "version": "paired_daily_blocks_v1",
+  "selection_sha256": "4282f6ad3498ee8d636a55685c5096ddc004f7030271dbe687c3fdf82bc5a16a",
+  "diagnostic_source_sha256": "5ca17491e22eb2c1dc7ed67597d2ea679bfd89a1cadc0305c169866ec02f20e2",
+  "seed": 42,
+  "block_windows": 288,
+  "resamples": 5000,
+  "rng_seed": 911,
+  "policy": "Consecutive non-overlapping 24h blocks of window starts; include final partial block; paired block resampling; fixed seed42 representative; conditional on this test period and these weights."
+}

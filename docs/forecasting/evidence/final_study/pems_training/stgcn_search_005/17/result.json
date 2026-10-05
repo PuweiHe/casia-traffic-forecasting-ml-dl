@@ -1,0 +1,81 @@
+{
+  "identity": "746c61ad49040ef4a3cda299e4b6188e0d84b5b7b2574cc4085eff9bc9790355",
+  "trial": "stgcn_search_005",
+  "model": "STGCN",
+  "seed": 17,
+  "completed_epochs": 83,
+  "selected_epoch": 58,
+  "validation": {
+    "all": {
+      "overall": {
+        "mae_mph": 1.6018691160395777,
+        "rmse_mph": 3.7561960503784304,
+        "observations": 20231616
+      },
+      "horizons": {
+        "5": {
+          "mae_mph": 0.8963301230991827,
+          "rmse_mph": 1.6128968612893029,
+          "observations": 1685968
+        },
+        "10": {
+          "mae_mph": 1.1517446037930876,
+          "rmse_mph": 2.283603149362837,
+          "observations": 1685968
+        },
+        "15": {
+          "mae_mph": 1.3360832257411521,
+          "rmse_mph": 2.828397334303391,
+          "observations": 1685968
+        },
+        "20": {
+          "mae_mph": 1.474856406290451,
+          "rmse_mph": 3.261928041986315,
+          "observations": 1685968
+        },
+        "25": {
+          "mae_mph": 1.5813424276804333,
+          "rmse_mph": 3.5958356792459925,
+          "observations": 1685968
+        },
+        "30": {
+          "mae_mph": 1.6652673809675684,
+          "rmse_mph": 3.8539106768520632,
+          "observations": 1685968
+        },
+        "35": {
+          "mae_mph": 1.7326828350123797,
+          "rmse_mph": 4.054237103262329,
+          "observations": 1685968
+        },
+        "40": {
+          "mae_mph": 1.788422645756068,
+          "rmse_mph": 4.211428129111643,
+          "observations": 1685968
+        },
+        "45": {
+          "mae_mph": 1.8353560832473068,
+          "rmse_mph": 4.335477568226777,
+          "observations": 1685968
+        },
+        "50": {
+          "mae_mph": 1.8782516618779193,
+          "rmse_mph": 4.44436995764443,
+          "observations": 1685968
+        },
+        "55": {
+          "mae_mph": 1.9188216408566399,
+          "rmse_mph": 4.5469107772702,
+          "observations": 1685968
+        },
+        "60": {
+          "mae_mph": 1.9632703581527413,
+          "rmse_mph": 4.655427453082469,
+          "observations": 1685968
+        }
+      }
+    }
+  },
+  "training_seconds": 15676.96967516886,
+  "parameters": 637516
+}

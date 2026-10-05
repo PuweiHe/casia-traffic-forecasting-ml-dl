@@ -1,0 +1,353 @@
+{
+  "selection_sha256": "4282f6ad3498ee8d636a55685c5096ddc004f7030271dbe687c3fdf82bc5a16a",
+  "trial": "stgcn_search_005",
+  "seed": 42,
+  "test": {
+    "all": {
+      "overall": {
+        "mae_mph": 1.6036531315728266,
+        "rmse_mph": 3.748406691848672,
+        "observations": 40561296
+      },
+      "horizons": {
+        "5": {
+          "mae_mph": 0.8880941090266005,
+          "rmse_mph": 1.6081394868107008,
+          "observations": 3380108
+        },
+        "10": {
+          "mae_mph": 1.1404435377839535,
+          "rmse_mph": 2.266456500545751,
+          "observations": 3380108
+        },
+        "15": {
+          "mae_mph": 1.324605813107875,
+          "rmse_mph": 2.8091321518076686,
+          "observations": 3380108
+        },
+        "20": {
+          "mae_mph": 1.4655369364986675,
+          "rmse_mph": 3.2436333435706963,
+          "observations": 3380108
+        },
+        "25": {
+          "mae_mph": 1.5747717537655885,
+          "rmse_mph": 3.5794393940983236,
+          "observations": 3380108
+        },
+        "30": {
+          "mae_mph": 1.6632935003406721,
+          "rmse_mph": 3.840819669306198,
+          "observations": 3380108
+        },
+        "35": {
+          "mae_mph": 1.7354181018756143,
+          "rmse_mph": 4.0424229407129415,
+          "observations": 3380108
+        },
+        "40": {
+          "mae_mph": 1.7962454033982895,
+          "rmse_mph": 4.206093529930613,
+          "observations": 3380108
+        },
+        "45": {
+          "mae_mph": 1.8491204355801492,
+          "rmse_mph": 4.341263352916434,
+          "observations": 3380108
+        },
+        "50": {
+          "mae_mph": 1.8935727090439827,
+          "rmse_mph": 4.4476873685513105,
+          "observations": 3380108
+        },
+        "55": {
+          "mae_mph": 1.9364394374224445,
+          "rmse_mph": 4.55047784357634,
+          "observations": 3380108
+        },
+        "60": {
+          "mae_mph": 1.9762958410300837,
+          "rmse_mph": 4.641043760114491,
+          "observations": 3380108
+        }
+      }
+    },
+    "slow": {
+      "overall": {
+        "mae_mph": 6.51676185333546,
+        "rmse_mph": 12.002413429466808,
+        "observations": 1224051
+      },
+      "horizons": {
+        "5": {
+          "mae_mph": 1.9410813313928985,
+          "rmse_mph": 3.052000365375005,
+          "observations": 102005
+        },
+        "10": {
+          "mae_mph": 2.9412078209927657,
+          "rmse_mph": 5.0724722666853035,
+          "observations": 102005
+        },
+        "15": {
+          "mae_mph": 4.044449544960054,
+          "rmse_mph": 7.313634040640257,
+          "observations": 102005
+        },
+        "20": {
+          "mae_mph": 5.118702133865148,
+          "rmse_mph": 9.303835593106056,
+          "observations": 102005
+        },
+        "25": {
+          "mae_mph": 6.0301981854764595,
+          "rmse_mph": 10.862214946137545,
+          "observations": 102005
+        },
+        "30": {
+          "mae_mph": 6.7900920029278025,
+          "rmse_mph": 12.085753741204396,
+          "observations": 102005
+        },
+        "35": {
+          "mae_mph": 7.4258464475808275,
+          "rmse_mph": 13.055106402189566,
+          "observations": 102005
+        },
+        "40": {
+          "mae_mph": 7.968554112911622,
+          "rmse_mph": 13.833649762550543,
+          "observations": 102005
+        },
+        "45": {
+          "mae_mph": 8.440297797164838,
+          "rmse_mph": 14.503803774857618,
+          "observations": 102005
+        },
+        "50": {
+          "mae_mph": 8.827966338324236,
+          "rmse_mph": 15.014911305134419,
+          "observations": 102004
+        },
+        "55": {
+          "mae_mph": 9.198477820723944,
+          "rmse_mph": 15.507208951863655,
+          "observations": 102002
+        },
+        "60": {
+          "mae_mph": 9.474515212397455,
+          "rmse_mph": 15.857758808826059,
+          "observations": 102000
+        }
+      }
+    },
+    "moderate": {
+      "overall": {
+        "mae_mph": 6.261366972148375,
+        "rmse_mph": 9.031401079471351,
+        "observations": 2769390
+      },
+      "horizons": {
+        "5": {
+          "mae_mph": 2.7884843947110047,
+          "rmse_mph": 4.172987258678549,
+          "observations": 230801
+        },
+        "10": {
+          "mae_mph": 4.211336933301119,
+          "rmse_mph": 6.229538056595355,
+          "observations": 230793
+        },
+        "15": {
+          "mae_mph": 5.153868612171278,
+          "rmse_mph": 7.5249444025654215,
+          "observations": 230788
+        },
+        "20": {
+          "mae_mph": 5.799940924388236,
+          "rmse_mph": 8.359861600565491,
+          "observations": 230788
+        },
+        "25": {
+          "mae_mph": 6.27453342900109,
+          "rmse_mph": 8.952669776744523,
+          "observations": 230787
+        },
+        "30": {
+          "mae_mph": 6.636764668587296,
+          "rmse_mph": 9.385394186272793,
+          "observations": 230785
+        },
+        "35": {
+          "mae_mph": 6.9038609918379,
+          "rmse_mph": 9.697727923964417,
+          "observations": 230783
+        },
+        "40": {
+          "mae_mph": 7.140042443221097,
+          "rmse_mph": 9.962064544250227,
+          "observations": 230780
+        },
+        "45": {
+          "mae_mph": 7.330116109699136,
+          "rmse_mph": 10.174018541165518,
+          "observations": 230773
+        },
+        "50": {
+          "mae_mph": 7.476968241330403,
+          "rmse_mph": 10.335887168295699,
+          "observations": 230771
+        },
+        "55": {
+          "mae_mph": 7.63824242020567,
+          "rmse_mph": 10.508522217213937,
+          "observations": 230771
+        },
+        "60": {
+          "mae_mph": 7.782912946404686,
+          "rmse_mph": 10.666771706886744,
+          "observations": 230770
+        }
+      }
+    },
+    "free_flow": {
+      "overall": {
+        "mae_mph": 1.086452388545002,
+        "rmse_mph": 2.1414026077263855,
+        "observations": 36567855
+      },
+      "horizons": {
+        "5": {
+          "mae_mph": 0.7089120194458108,
+          "rmse_mph": 1.112581595769987,
+          "observations": 3047302
+        },
+        "10": {
+          "mae_mph": 0.8475860142171661,
+          "rmse_mph": 1.3774678833183935,
+          "observations": 3047310
+        },
+        "15": {
+          "mae_mph": 0.9435537844407295,
+          "rmse_mph": 1.6352545790497781,
+          "observations": 3047315
+        },
+        "20": {
+          "mae_mph": 1.014986355572696,
+          "rmse_mph": 1.8654013545931822,
+          "observations": 3047315
+        },
+        "25": {
+          "mae_mph": 1.0696978884660167,
+          "rmse_mph": 2.047430843672343,
+          "observations": 3047316
+        },
+        "30": {
+          "mae_mph": 1.1150206831223182,
+          "rmse_mph": 2.191461432227911,
+          "observations": 3047318
+        },
+        "35": {
+          "mae_mph": 1.1535163328202405,
+          "rmse_mph": 2.3017924754007137,
+          "observations": 3047320
+        },
+        "40": {
+          "mae_mph": 1.1849390762501002,
+          "rmse_mph": 2.3877821660080625,
+          "observations": 3047323
+        },
+        "45": {
+          "mae_mph": 1.2134167666398294,
+          "rmse_mph": 2.454453947099647,
+          "observations": 3047330
+        },
+        "50": {
+          "mae_mph": 1.2386322551643518,
+          "rmse_mph": 2.511083874202546,
+          "observations": 3047333
+        },
+        "55": {
+          "mae_mph": 1.261570013708481,
+          "rmse_mph": 2.560497902788091,
+          "observations": 3047335
+        },
+        "60": {
+          "mae_mph": 1.285590902724336,
+          "rmse_mph": 2.618757636492151,
+          "observations": 3047338
+        }
+      }
+    },
+    "missing_history": {
+      "overall": {
+        "mae_mph": null,
+        "rmse_mph": null,
+        "observations": 0
+      },
+      "horizons": {
+        "5": {
+          "mae_mph": null,
+          "rmse_mph": null,
+          "observations": 0
+        },
+        "10": {
+          "mae_mph": null,
+          "rmse_mph": null,
+          "observations": 0
+        },
+        "15": {
+          "mae_mph": null,
+          "rmse_mph": null,
+          "observations": 0
+        },
+        "20": {
+          "mae_mph": null,
+          "rmse_mph": null,
+          "observations": 0
+        },
+        "25": {
+          "mae_mph": null,
+          "rmse_mph": null,
+          "observations": 0
+        },
+        "30": {
+          "mae_mph": null,
+          "rmse_mph": null,
+          "observations": 0
+        },
+        "35": {
+          "mae_mph": null,
+          "rmse_mph": null,
+          "observations": 0
+        },
+        "40": {
+          "mae_mph": null,
+          "rmse_mph": null,
+          "observations": 0
+        },
+        "45": {
+          "mae_mph": null,
+          "rmse_mph": null,
+          "observations": 0
+        },
+        "50": {
+          "mae_mph": null,
+          "rmse_mph": null,
+          "observations": 0
+        },
+        "55": {
+          "mae_mph": null,
+          "rmse_mph": null,
+          "observations": 0
+        },
+        "60": {
+          "mae_mph": null,
+          "rmse_mph": null,
+          "observations": 0
+        }
+      }
+    }
+  },
+  "primary_mae_mph": 1.6036531315728269
+}

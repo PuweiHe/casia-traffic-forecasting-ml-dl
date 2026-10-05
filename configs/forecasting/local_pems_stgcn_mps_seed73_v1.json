@@ -1,0 +1,54 @@
+{
+  "version": "local_pems_stgcn_mps_seed73_v1",
+  "purpose": "Final missing validation replication; user authorized project completion on 2026-10-04",
+  "datasets": [
+    "PEMS_BAY"
+  ],
+  "seeds": [
+    73
+  ],
+  "epochs": 180,
+  "min_epochs": 40,
+  "patience": 25,
+  "threads": 4,
+  "trials": [
+    {
+      "id": "stgcn_search_005",
+      "model": "STGCN",
+      "config": {
+        "Ks": 4,
+        "Kt": 2,
+        "blocks": [
+          [
+            1,
+            64,
+            128
+          ],
+          [
+            128,
+            64,
+            128
+          ]
+        ],
+        "dropout": 0.1,
+        "graph_conv_type": "chebconv",
+        "direct_multi_step": true
+      },
+      "learning_rate": 0.0003,
+      "batch_size": 32,
+      "weight_decay": 0.0
+    }
+  ],
+  "selection": "12-horizon validation MAE; no test evaluation",
+  "candidate_provenance": "stgcn_reference plus first 12 STGCN search candidates from cuda_search_v1.json seed 20261001, preserved per-trial batch size",
+  "hardware": "Apple M4 Pro MPS only; separate from CARC A100 protocol",
+  "data": "chronological train/validation; train-only normalization; mask nonpositive/nonfinite speeds; partition-contained 12-to-12 windows",
+  "next_stage": "Lock selection before one final independent test evaluation",
+  "tasks": [
+    {
+      "trial": "stgcn_search_005",
+      "seed": 73
+    }
+  ],
+  "wall_budget_hours": 8
+}

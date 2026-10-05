@@ -1,0 +1,19 @@
+{
+  "source_sha256": {
+    "docs/forecasting/evidence/final_study/final_pems/summary.json": "ade28243d1e5bb8257dfb1aae31d497519e14d126162afaf30d8d73bfd797080",
+    "docs/forecasting/evidence/final_study/pems_test/stgcn_reference_seed17.json": "a0b1767a44775581a66e8008796f9a23edd038951096de88f88589037e9e1c5b",
+    "docs/forecasting/evidence/final_study/pems_test/stgcn_reference_seed42.json": "8ea881c17e1134b2265ae634cddaec3da640dbb17835cec4a533b7224dfbd264",
+    "docs/forecasting/evidence/final_study/pems_test/stgcn_reference_seed73.json": "ae63181fd00fedb5e2d07c258aa2838447fadefc4cf61f8b12301535f85e568b",
+    "docs/forecasting/evidence/final_study/pems_test/stgcn_search_005_seed17.json": "793fa8ff873a8a400586c492eb481581c2fa20bac0efa1363282bfacbb991ae6",
+    "docs/forecasting/evidence/final_study/pems_test/stgcn_search_005_seed42.json": "663fe1d015350c1f769b73988be7fab61b53cd48a8e6c2f8b8056044cddcfd00",
+    "docs/forecasting/evidence/final_study/pems_test/stgcn_search_005_seed73.json": "34e07f780cadce257a9284f6e03d63baf02c2d33462824e3eaa284309ca3bb2f",
+    "docs/forecasting/evidence/final_study/pems_training/stgcn_reference/17/epochs.json": "bdd53ec4f9893c114768e81a154488a74c8e33b440117904fc41b6a48db201f3",
+    "docs/forecasting/evidence/final_study/pems_training/stgcn_reference/42/epochs.json": "ee006c4f6a4c34cdea0043af7e116bf6532c120fede8b168a99bd5fd6e9d1179",
+    "docs/forecasting/evidence/final_study/pems_training/stgcn_reference/73/epochs.json": "dbc41e39fedaa03ec2ada3a1e948c70c958d00a0a165b200326262c7d9cc5ebd",
+    "docs/forecasting/evidence/final_study/pems_training/stgcn_search_005/17/epochs.json": "83e06e9bd44c5afe4b5f64766b6be0beeb67ee1363e6af134aca7370727f67f3",
+    "docs/forecasting/evidence/final_study/pems_training/stgcn_search_005/42/epochs.json": "3e4d96b7ce60576f3d68f9e26ca9d8c3b464f0b9c04a2815218307d6d6f3d29b",
+    "docs/forecasting/evidence/final_study/pems_training/stgcn_search_005/73/epochs.json": "c73e8a9ae3254a627bbdd928a32876e4a450284c5a4e6d8e45cb52aea95b9f87",
+    "docs/forecasting/evidence/final_study/matched_core_validation/summary.json": "5384f43091618c9b098b5c09c52ea3f383ab9d3b057bda10fa12727af45e34a0"
+  },
+  "script_sha256": "d9f9027704d881170b8211eda3ff03f495bb16cb92bd4c10bcab2dd682db3d6a"
+}

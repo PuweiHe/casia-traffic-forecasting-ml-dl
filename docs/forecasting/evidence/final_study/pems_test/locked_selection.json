@@ -1,0 +1,109 @@
+{
+  "version": "final_pems_evaluation_v1",
+  "models": [
+    {
+      "trial": "stgcn_reference",
+      "seed": 17,
+      "directory": "runs/local_pems_stgcn_mps_screen_v1/PEMS_BAY/stgcn_reference/17",
+      "identity": "3c09c99959629d138f8d58ef805a03ab936b35aa5771cb509b645d2086e620a9",
+      "hashes": {
+        "result.json": "1d479460eae5df2b6886ec1d368ed34e2eaa0de8f07a6719bd255de0d18fe2fe",
+        "status.json": "4733d4eb508bb1f89aee0282bcd6d309bc57e0171ae0dd3b3cef976888d745bf",
+        "selected.pt": "b578f504633a2fa0abe828c4713cc154e8702de4e61cdb36908be2a3159791a5",
+        "progress.pt": "40ac829fdf78f2a54b47587899f520c9fd4c8af764d2be8e94c8b0a8bb346fff",
+        "epochs.json": "bdd53ec4f9893c114768e81a154488a74c8e33b440117904fc41b6a48db201f3"
+      },
+      "validation_mae_mph": 1.7127748346755767
+    },
+    {
+      "trial": "stgcn_reference",
+      "seed": 42,
+      "directory": "runs/local_pems_stgcn_mps_confirm_v1/PEMS_BAY/stgcn_reference/42",
+      "identity": "78258094206bd3131ed1b0d06e0333149cd2cc5c683168c5d2d9b04b7e34c601",
+      "hashes": {
+        "result.json": "0a60e3c053a2605fae1a1e83bfb3f6f7569e358f9335c5e3c95012dec39a6a93",
+        "status.json": "70b3a2c735bb0a11be8cfb8469655928956dd297ff05a6a091fb6af4bae2fc2c",
+        "selected.pt": "4bff7e51041ff4354f412162734c9cecfe630005889fbac615c24ebf23b9905b",
+        "progress.pt": "9f26ce57978421de18ea877731ad4ea5a2e00ac657fbdef782ab319e53bf7b0e",
+        "epochs.json": "ee006c4f6a4c34cdea0043af7e116bf6532c120fede8b168a99bd5fd6e9d1179"
+      },
+      "validation_mae_mph": 1.7040718349404598
+    },
+    {
+      "trial": "stgcn_reference",
+      "seed": 73,
+      "directory": "runs/local_pems_stgcn_mps_confirm_v1/PEMS_BAY/stgcn_reference/73",
+      "identity": "279b23040d8bc40898102dd1c3cfeea64421b94217d0f9b19aa14d85542d7c7e",
+      "hashes": {
+        "result.json": "7e8b79982810db561db2c197b8e8fb861ab85c2dbb69b28f992ceb0c4fc3b4bd",
+        "status.json": "48151d6953f63f3beea6a5f4b68cddde2a82c97402f0942eacf7ce1ccc41469f",
+        "selected.pt": "107016a1c1ba5479e5f2d6758887607dc59618afc95eb3dc1a060b7e11c53935",
+        "progress.pt": "306b9243ec967c46c5e8dd60db78c3377bbace516e5e82e85a95f3fa726b44ba",
+        "epochs.json": "dbc41e39fedaa03ec2ada3a1e948c70c958d00a0a165b200326262c7d9cc5ebd"
+      },
+      "validation_mae_mph": 1.6917982043750084
+    },
+    {
+      "trial": "stgcn_search_005",
+      "seed": 17,
+      "directory": "runs/local_pems_stgcn_mps_screen_v1/PEMS_BAY/stgcn_search_005/17",
+      "identity": "746c61ad49040ef4a3cda299e4b6188e0d84b5b7b2574cc4085eff9bc9790355",
+      "hashes": {
+        "result.json": "e2c2f6dc52388689b85505c85f656b132c07b64dcc6e26d814e7314b9e5673f1",
+        "status.json": "1fc2f74dfc689b1bbc026619758fbeeab9dac699219aed2f1babaa1e3a83792e",
+        "selected.pt": "89b13a345d37a95493f230af5686c723315b08174250970bd6abf0fe7698c10b",
+        "progress.pt": "6e9efd965daa33dbc374afcb259816f4f9f99af564a7dd05aed9dae49e4de133",
+        "epochs.json": "83e06e9bd44c5afe4b5f64766b6be0beeb67ee1363e6af134aca7370727f67f3"
+      },
+      "validation_mae_mph": 1.6018691160395777
+    },
+    {
+      "trial": "stgcn_search_005",
+      "seed": 42,
+      "directory": "runs/local_pems_stgcn_mps_confirm_v1/PEMS_BAY/stgcn_search_005/42",
+      "identity": "d680e319cce89ca7a8b118703f520615852127783a0b5b2cceb2ba804b0fd347",
+      "hashes": {
+        "result.json": "227dcaa4b5cc7bba4206efc4c1cb58bf5ef1c69a1adb562332c7cc752bfa06d3",
+        "status.json": "8a6e098a5510c02dc425e02055f3992d0c258e69c3c18959e9d91a51661138ab",
+        "selected.pt": "8d7756a1e6f763f364e4fbe1be8161957a0b3f8d28a9849ebc64f76afd1da9a2",
+        "progress.pt": "556bfdf3766c84a8b3472180d23faaacad42436dbd56f655ef84523d05193f69",
+        "epochs.json": "3e4d96b7ce60576f3d68f9e26ca9d8c3b464f0b9c04a2815218307d6d6f3d29b"
+      },
+      "validation_mae_mph": 1.5977152418332052
+    },
+    {
+      "trial": "stgcn_search_005",
+      "seed": 73,
+      "directory": "runs/local_pems_stgcn_mps_seed73_v1/PEMS_BAY/stgcn_search_005/73",
+      "identity": "a473b36e7729b32827850fa22db22e4f9bc89d119809701556765ca3a7b7f597",
+      "hashes": {
+        "result.json": "f3ffe2c391d97d944700e16afd54e38e125add7421918b6b73c2230c94ac0a37",
+        "status.json": "a4319db3611b366a5c5e3871d7cc4a459a8e6746df874be6dfb4a16eade61eee",
+        "selected.pt": "ae0d7f0c94ac7675d67f81aa75ee226d52d6f2aaf01f07dfd5d55020cf3a7cd2",
+        "progress.pt": "aea46eb08ecf730853f0b474df2a0c4fe70273f1a7ed2212c2edc0a82e44aa4c",
+        "epochs.json": "c73e8a9ae3254a627bbdd928a32876e4a450284c5a4e6d8e45cb52aea95b9f87"
+      },
+      "validation_mae_mph": 1.6030465425146123
+    }
+  ],
+  "winner_by_validation": "stgcn_search_005",
+  "validation_means": {
+    "stgcn_reference": 1.7028816246636815,
+    "stgcn_search_005": 1.6008769667957985
+  },
+  "primary_metric": "Equal mean of 12 horizon MAEs in mph",
+  "data_manifest_sha256": "80cd1c7851251cbdef64d1dd2895901dabf33ddec20bfea5b9798d75cac0bafd",
+  "evaluation_source_sha256": "69198eb58b990b18bdc25ad70b01472b29e14edc32e11e142debe423ab503ab3",
+  "provenance_ledger_sha256": "5efafb622e7536b6892be6d23f9230677230ad705d6be2c3c629849de3796b68",
+  "device": "Apple M4 Pro MPS; no CPU fallback",
+  "test_partition": "Last 20%, partition-contained 12-to-12 windows",
+  "baselines": [
+    "persistence",
+    "moving_mean"
+  ],
+  "representative_serving_seed": 42,
+  "limits": [
+    "Seed17 participated in screening",
+    "No selection based on test scores"
+  ]
+}
