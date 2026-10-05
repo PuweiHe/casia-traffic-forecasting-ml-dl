@@ -6,12 +6,7 @@ An internship-derived traffic analytics project with reproducible Random Forest,
 
 ## Completed multi-horizon study — independent PEMS-BAY evaluation
 
-The 2026 reconstruction predicts12 future five-minute speeds from12 past readings.
-Validation-selected STGCN tuning reduced held-out PEMS-BAY MAE from **1.6853 to
-1.6114 mph (4.38%)**, averaged over three matched seeds. The tuned model uses17.74×
-more parameters; this is an explicit accuracy/cost trade-off. METR-LA matched
-ablations and a speed-only STAEformer adaptation remain exploratory validation
-comparisons. These are later reconstructed measurements, not original2024 results.
+This study extends the forecasting workflow associated with the **2024 CASIA internship**: 12 past five-minute speed readings predict the next 12. In the documented reproduction, validation-selected STGCN tuning reduced held-out PEMS-BAY MAE from **1.6853 to 1.6114 mph (4.38%)** across three matched seeds. The tuned model uses 17.74× more parameters, so accuracy is reported with its compute and latency costs. METR-LA matched ablations and a speed-only STAEformer adaptation provide exploratory validation comparisons. These measured results come from the subsequent reproducibility study; original internship benchmark results are unavailable.
 
 [Final research report](docs/forecasting/FINAL_STUDY.md) ·
 [Reproduce and serve the selected model](docs/forecasting/REPRODUCE_FINAL_STUDY.md) ·
