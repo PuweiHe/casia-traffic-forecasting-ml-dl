@@ -1,6 +1,6 @@
 # Traffic forecasting: final research and MLE report
 
-This is a **2026 reconstruction and extension of an internship-derived project**. The measurements below are not recovered 2024 internship results. The contribution is a reproducible modeling and engineering workflow built on LibCity architectures; no new STGCN or Transformer architecture is claimed.
+This project reproduces and extends the forecasting workflow associated with the **2024 CASIA internship**. The measurements below come from the subsequent reproducibility study; original internship measurements are not available for these benchmarks. The contribution is a reproducible modeling and engineering workflow built on LibCity architectures; no new STGCN or Transformer architecture is claimed.
 
 ## Question and primary result
 
