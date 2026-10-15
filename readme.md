@@ -1,8 +1,22 @@
-# CASIA Traffic Forecasting — Machine Learning & Deep Learning
+# Traffic Forecasting — Model Training and MLE Systems
 
-**Audit temporal data, compare spatiotemporal models, and ship reproducible forecasting artifacts.**
+**Train, select, evaluate, and serve traffic-speed forecasting models with auditable data and checkpoint lineage.**
 
-An internship-derived traffic analytics project with reproducible Random Forest, LibCity SVR/FNN/GRU comparisons, a validated FastAPI inference service, and a public **METR-LA graph and Transformer forecasting** study. The internship-recording task predicts next-minute mean vehicle speed; the public Los Angeles task predicts 5-minute-ahead speed at 207 road sensors. [Model selection](docs/forecasting/MODEL_SELECTION.md) · [METR-LA protocol and model results](docs/forecasting/METR_LA_STUDY.md).
+This repository extends a workflow associated with my 2024 CASIA internship. The measured benchmarks and engineering artifacts below come from a subsequent reproducibility study; original internship benchmark results are unavailable. It covers single-station next-minute forecasting on retained recordings and public multi-sensor forecasting on METR-LA and PEMS-BAY.
+
+## Training and MLE evidence at a glance
+
+| Area | Inspectable work |
+| --- | --- |
+| Data protocol | Chronological partitions, train-only scaling, explicit missing-value masks, sensor and graph identity checks |
+| Model training | Random Forest, SVR, FNN, GRU Seq2Seq, STGCN, DCRNN, STTN, and a speed-only STAEformer adaptation |
+| Model selection | 13 bounded STGCN configurations on PEMS-BAY, validation selection, three matched seeds, and reported parameter and latency costs |
+| Training reliability | Resumable PyTorch runs with model/optimizer/scheduler/RNG state, atomic checkpoints, and interruption recovery checks |
+| Serving | Versioned weights, scaler, graph, and sensor order in a schema-validated inference artifact with CPU/MPS reload checks |
+
+**Primary measured result:** validation-selected STGCN tuning reduced held-out 12-step PEMS-BAY MAE from **1.6853 to 1.6114 mph (4.38%)** across three matched seeds. The tuned model has **17.74×** the parameters of the compact reference; the [final study](docs/forecasting/FINAL_STUDY.md) reports that cost alongside accuracy. METR-LA and private-recording results below are separate exploratory studies with their own protocols.
+
+[Start with the final study](docs/forecasting/FINAL_STUDY.md) · [Reproduce and serve the selected model](docs/forecasting/REPRODUCE_FINAL_STUDY.md) · [Inspect exact test evidence](docs/forecasting/evidence/final_study/final_pems/summary.json)
 
 ## Completed multi-horizon study — independent PEMS-BAY evaluation
 
