@@ -1,4 +1,5 @@
 import copy
+from concurrent.futures import ThreadPoolExecutor
 import datetime as dt
 import hashlib
 import http.client
@@ -97,6 +98,24 @@ class ServingTests(unittest.TestCase):
                 self.assertEqual(request('POST','/predict','{}',{'Content-Type':'application/json'})[0],400)
                 self.assertEqual(request('POST','/predict','{}',{'Content-Type':'text/plain'})[0],415)
                 self.assertEqual(request('GET','/other')[0],404)
+                bad=copy.deepcopy(payload);bad['sensor_ids'].reverse()
+                self.assertEqual(request('POST','/predict',json.dumps(bad),{'Content-Type':'application/json'})[0],400)
+                missing=copy.deepcopy(payload)
+                missing['speed_mph']=[[[[None] for _ in range(3)] for _ in range(12)]]
+                status,value=request('POST','/predict',json.dumps(missing),{'Content-Type':'application/json'})
+                self.assertEqual(status,200)
+                self.assertTrue(np.isfinite(value['speed_mph']).all())
+                # Concurrent clients exercise the shipped serial HTTPServer queue.
+                # This does not claim parallel model execution.
+                def invoke(_):
+                    return request('POST','/predict',json.dumps(payload),{'Content-Type':'application/json'})
+                with ThreadPoolExecutor(max_workers=4) as clients:
+                    replies=list(clients.map(invoke,range(8)))
+                for status,value in replies:
+                    self.assertEqual(status,200)
+                    self.assertEqual(value['speed_mph'],body['speed_mph'])
+                self.assertEqual(request('GET','/health')[0],200)
+
             finally:server.shutdown();thread.join(timeout=5)
 
 if __name__=='__main__':unittest.main()

@@ -36,7 +36,7 @@ flowchart LR
 
 **Transformer evidence:** 11 speed-only STAEformer trials tested adaptive, static spatial, and zero embeddings on exploratory METR-LA validation. Static spatial embeddings slightly outperformed adaptive embeddings; removing embeddings worsened error. This is an adaptation with documented limitations, not a new Transformer architecture or a SOTA claim. [Ablations and negative results](docs/forecasting/FINAL_STUDY.md#matched-ablations-and-negative-results).
 
-**Engineering evidence:** [inference implementation](traffic_forecasting/stgcn_inference.py), [artifact and metric checks](tests/forecasting/test_release_evidence.py), and [inference tests](tests/forecasting/test_stgcn_inference.py) connect the reported experiments to inspectable code.
+**Engineering evidence:** [inference implementation](traffic_forecasting/stgcn_inference.py), [artifact and metric checks](tests/forecasting/test_release_evidence.py), and [inference tests](tests/forecasting/test_stgcn_inference.py) connect the reported experiments to inspectable code. HTTP regression coverage includes schema failures, all-missing inputs, and consistent responses to concurrent clients; the current server processes requests serially.
 
 <details>
 <summary><strong>Earlier exploratory studies: single-step METR-LA and private recordings</strong></summary>

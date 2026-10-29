@@ -70,3 +70,11 @@ python -m traffic_forecasting.focused_worker \
 ```
 
 Use a separate output root for each new numerical study. The worker's setup, manifest and task locks protect shared roots. Match the intended CUDA/software/hardware record and run `--preflight` in a separate diagnostic root before formal work. Scheduling wrappers and account paths are site-specific; historical personal Slurm control files are not published. No unverified queue-time or heterogeneous-GPU speedup is claimed.
+
+## Service regression coverage
+
+The release evidence suite verifies published evidence hashes, locked metrics, released weights, and source identity. The inference suite covers training/preprocessing parity, sensor order and timestamp rejection, nonfinite inputs, all-missing histories, graph tampering, and unavailable-device rejection.
+
+HTTP checks additionally exercise health, prediction, invalid schema/content type, unknown routes, reversed sensor order, all-missing input, and eight requests from four concurrent clients with identical expected predictions. The shipped `HTTPServer` processes requests serially: this verifies queue correctness, not parallel inference or a production throughput guarantee.
+
+Both suites passed (2 release tests and 5 inference tests) in an existing Python environment with PyTorch 2.10.0 and NumPy 1.26.4. This is an existing-environment regression check, not a fresh-install reproduction. A clean-environment installation and representative HTTP load benchmark remain separate validation steps; previously reported in-process timing must not be labeled end-to-end HTTP latency.
