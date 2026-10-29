@@ -44,3 +44,11 @@ python -m unittest discover -s tests/forecasting -p 'test_stgcn_inference.py' -v
 ```
 
 Further training is not required to support the present claims. Cross-city generalization, parameter-matched architecture rankings, or production robustness would require separately designed evidence and budgets.
+
+## Operational interpretation
+
+The construction-monitoring context motivates the work, but public-benchmark MAE is not a measured expressway operating benefit. A deployment would first define the operator decision, forecast lead time, false-alarm tolerance, and data-freshness requirement. Model choice should then account for memory, end-to-end latency, and error costs.
+
+Implemented evidence includes input validation, immutable artifact identity, checkpoint recovery checks, and HTTP regression tests. The server is serial and local. Authentication, capacity planning, bounded queues, production monitoring, shadow rollout, and rollback operations are proposed next steps, not delivered production features. Finite predictions on all-missing inputs do not establish reliable forecasts in that condition.
+
+Keep offline error reduction distinct from unmeasured congestion, revenue, or staffing effects. For a system-design discussion, explain how delayed labels would support quality monitoring and why drift alone should not automatically promote a retrained model.
