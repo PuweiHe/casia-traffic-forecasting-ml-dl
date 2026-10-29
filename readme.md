@@ -4,6 +4,8 @@
 
 This repository extends a workflow associated with my 2024 CASIA internship. The measured benchmarks and engineering artifacts below come from a subsequent reproducibility study; original internship benchmark results are unavailable. It covers single-station next-minute forecasting on retained recordings and public multi-sensor forecasting on METR-LA and PEMS-BAY.
 
+[Project case study](docs/forecasting/PROJECT_CASE_STUDY.md) · [Final results](docs/forecasting/FINAL_STUDY.md) · [Run the model](docs/forecasting/REPRODUCE_FINAL_STUDY.md)
+
 ## Training and MLE evidence at a glance
 
 | Area | Inspectable work |
@@ -150,9 +152,6 @@ A separate [DTW study](docs/portfolio/README.md) documents a failed approximate-
 - LibCity framework/model code is inherited from its contributors, not claimed as an original framework implementation. See [upstream README](UPSTREAM_README.md), [Apache-2.0 license](LICENSE.txt), and [the focused Seq2Seq patch](docs/portfolio/seq2seq_changes.patch).
 - Added work is concentrated in `traffic_forecasting/`, `traffic_analysis/`, `tests/`, `scripts/` and the documented Seq2Seq changes. No original published LibCity benchmark score is claimed to have been reproduced.
 
-### CUDA validation search (pending measurements)
+### Study status
 
-A separate [staged CUDA search](docs/forecasting/CUDA_SEARCH.md) tunes STGCN first,
-replicates shortlisted configurations across three seeds, and measures matched
-residual/road-graph ablations. It preserves the running CPU/MPS protocols and does
-not score test partitions during search. No new accuracy gain is claimed yet.
+Training, matched comparisons, and the locked PEMS-BAY evaluation are complete. The [staged CUDA plan](docs/forecasting/CUDA_SEARCH.md) is retained as historical provenance, not an outstanding training queue. Start with the [final report](docs/forecasting/FINAL_STUDY.md) for conclusions and the [case study](docs/forecasting/PROJECT_CASE_STUDY.md) for engineering decisions and verification without retraining.
