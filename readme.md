@@ -20,19 +20,28 @@ This repository extends a workflow associated with my 2024 CASIA internship. The
 
 [Start with the final study](docs/forecasting/FINAL_STUDY.md) · [Reproduce and serve the selected model](docs/forecasting/REPRODUCE_FINAL_STUDY.md) · [Inspect exact test evidence](docs/forecasting/evidence/final_study/final_pems/summary.json)
 
-## Completed multi-horizon study — independent PEMS-BAY evaluation
+## Results and workflow
 
-This study extends the forecasting workflow associated with the **2024 CASIA internship**: 12 past five-minute speed readings predict the next 12. In the documented reproduction, validation-selected STGCN tuning reduced held-out PEMS-BAY MAE from **1.6853 to 1.6114 mph (4.38%)** across three matched seeds. The tuned model uses 17.74× more parameters, so accuracy is reported with its compute and latency costs. METR-LA matched ablations and a speed-only STAEformer adaptation provide exploratory validation comparisons. These measured results come from the subsequent reproducibility study; original internship benchmark results are unavailable.
+![Three-seed held-out PEMS-BAY results](docs/forecasting/figures/pems_locked_test.png)
 
-[Final research report](docs/forecasting/FINAL_STUDY.md) ·
-[Reproduce and serve the selected model](docs/forecasting/REPRODUCE_FINAL_STUDY.md) ·
-[Exact test evidence](docs/forecasting/evidence/final_study/final_pems/summary.json) ·
-[Research figures](docs/forecasting/figures/pems_locked_test.png)
+```mermaid
+flowchart LR
+    A[Chronological partitions] --> B[Train-only preprocessing]
+    B --> C[Validation search and matched seeds]
+    C --> D[Lock configuration and weights]
+    D --> E[Held-out evaluation and error analysis]
+    D --> F[Versioned inference artifact]
+    F --> G[Schema checks and reload parity]
+```
 
-Historical [multi-horizon protocol](docs/forecasting/MULTIHORIZON_STUDY.md),
-[workflow decisions](docs/forecasting/MLE_WORKFLOW_V2.md) and
-[audit](docs/forecasting/DEEP_AUDIT.md) remain available for provenance.
-Earlier single-step scores below belong to a different task.
+**Transformer evidence:** 11 speed-only STAEformer trials tested adaptive, static spatial, and zero embeddings on exploratory METR-LA validation. Static spatial embeddings slightly outperformed adaptive embeddings; removing embeddings worsened error. This is an adaptation with documented limitations, not a new Transformer architecture or a SOTA claim. [Ablations and negative results](docs/forecasting/FINAL_STUDY.md#matched-ablations-and-negative-results).
+
+**Engineering evidence:** [inference implementation](traffic_forecasting/stgcn_inference.py), [artifact and metric checks](tests/forecasting/test_release_evidence.py), and [inference tests](tests/forecasting/test_stgcn_inference.py) connect the reported experiments to inspectable code.
+
+<details>
+<summary><strong>Earlier exploratory studies: single-step METR-LA and private recordings</strong></summary>
+
+The studies below use different targets, units, and evaluation histories. Their scores should not be compared directly with the primary PEMS-BAY result.
 
 ## Public Los Angeles traffic forecasting: STGCN, DCRNN, and STTN
 
@@ -62,6 +71,8 @@ The tuned GRU uses **609 parameters vs 26,369 (97.69% fewer)**. Its MAE seed sta
 **Architecture ablation:** A direct one-step GRU head removed the autoregressive decoder and was tuned over six hidden-size/residual-scale settings, using the same three seeds and validation sessions. Its best validation MAE was **6.020 km/h**, versus **6.111** for the selected compact Seq2Seq GRU, but its retrospective test MAE was **5.558 km/h**, worse than the compact model's **5.312**. The original holdout had already been inspected before this follow-up, so this comparison is exploratory, not a fresh blind test. The direct model is included as a reproducible negative result; it does not replace the served model. [Candidate scores](docs/forecasting/direct_gru_validation.json) · [Retrospective report](docs/forecasting/direct_gru_test_report.json)
 
 [Full test results](docs/forecasting/test_report.json) · [Search history](docs/forecasting/selection.json) · [Protocol](docs/forecasting/PROTOCOL.md) · [Model card](docs/forecasting/MODEL_CARD.md)
+
+</details>
 
 ## What changed and why
 
